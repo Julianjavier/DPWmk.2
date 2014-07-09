@@ -40,5 +40,5 @@ def playerDPS(a, b):
     DPS = (a * b)
     print DPS
 
-playerDPS(10, 2)
+playerDPS(int(STR), int(DEX))
 
