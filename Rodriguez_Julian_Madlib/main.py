@@ -1,4 +1,6 @@
+import random
 
+print random.randint(1,5)
 
 #First Prompt
 print "Well hello hail and harty traveler, welcome to my humble Inn. May I ask your name?"
@@ -15,8 +17,11 @@ HOME= raw_input("Where do you hail from?:_")
 print "I see, so you come from the land of "+HOME+", How nice."
 
 
-#Fith Prompt
+#Fifth Prompt
 print "Tell me more about yourself!"
 STR= raw_input("What is your strength value?")
 DEX= raw_input("What is your dexterity value?")
 # LUK= raw_input("How much of a wizard are you?(0-3!)")
+
+i = random.randint(1,5)
+BEASTS= ["Dragon", "Ogre", "Litch", "Hell Hound"]
