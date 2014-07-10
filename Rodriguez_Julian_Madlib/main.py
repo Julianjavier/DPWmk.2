@@ -30,22 +30,10 @@ CharacterInfo= {'Name':NAME, 'Class':CLASS, 'Home':HOME}
 
 BEASTS= ["Dragon", "Ogre", "Litch", "Hell Hound"]
 
-BEAST_HP= random.randint(2000, 9999)
-Damage= 0
+BEAST_HP= random.randint(100, 999)
+damage= BEAST_HP
 
-# i = random.randint(0,3) Original random
-
-
-#Print Beast Encounter
-print "Your adventure begins wile you make your way to an old dungeon were you face a mighty "+BEASTS[i]+"!"
-
-SKILL= raw_input ("What Skill do you wish to use?")
-
-def playerDPS(a, b):
-    DPS = (a * b)
-    return DPS
-
-# DPS= playerDPS(int(STR), int(DEX))
+# i = random.randint(0,3) #Original random
 
 for i in range(0, int(LUK)):
     if LUK > 4:
@@ -53,20 +41,33 @@ for i in range(0, int(LUK)):
     else:
         LUK == LUK
 
-def MonsterDefence(a, b, c):
-    DPS = (a / b) * c
+    BEAST=BEASTS[i]
+
+#Print Beast Encounter
+print "Your adventure begins wile you make your way to an old dungeon were you face a mighty "+BEAST+"!"
+
+# SKILL= raw_input ("What Skill do you wish to use?")
+
+# def playerDPS(a, b):
+#     DPS = (a * b)
+#     return DPS
+
+
+def playerDPS(a, b):
+    DPS = (a * b)
     print "You inflict "+str(DPS)+" points of damage!"
     if DPS <= BEAST_HP:
-        print("The "+BEASTS[i]+" Has proven more of a challenge than expected, you decide to retreat and return another day.")
+        print("The "+BEAST+" Has proven more of a challenge than expected, you decide to retreat and return another day.")
     else:
-        print("Congratulations you have slain the "+BEASTS[i]+" and you return with a bounty of great spoils!")
+        print("Congratulations you have slain the "+BEAST+" and you return with a bounty of great spoils!")
 
-playerDPS(int(STR), int(DEX))
+DPS= playerDPS(int(STR), int(DEX))
+
 
 # DPS= playerDPS(20, 100)
-
-###Original Loop for monster fight
-# while BEAST_HP > 0:
-#     BEAST_HP - DPS
+#
+# ##Original Loop for monster fight
+# while damage > 0:
+#     damage== BEAST_HP - DPS
 #     print "You inflicted"+str(DPS)+". on the foul Beast, it now has"+str(BEAST_HP)
 
