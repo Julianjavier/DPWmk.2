@@ -31,43 +31,47 @@ CharacterInfo= {'Name':NAME, 'Class':CLASS, 'Home':HOME}
 BEASTS= ["Dragon", "Ogre", "Litch", "Hell Hound"]
 
 BEAST_HP= random.randint(100, 999)
-damage= BEAST_HP
+# damage= BEAST_HP
 
 # i = random.randint(0,3) #Original random
 
-for i in range(0, int(LUK)):
-    if LUK > 4:
-        LUK == 4
-    else:
-        LUK == LUK
+# for i in range(0, int(LUK)):
+#     if LUK > 4:
+#         LUK == 4
+#     else:
+#         LUK == LUK
+#
+#     BEAST=BEASTS[i]
 
-    BEAST=BEASTS[i]
 
-#Print Beast Encounter
-print "Your adventure begins wile you make your way to an old dungeon were you face a mighty "+BEAST+"!"
 
 # SKILL= raw_input ("What Skill do you wish to use?")
 
-# def playerDPS(a, b):
-#     DPS = (a * b)
-#     return DPS
-
-
 def playerDPS(a, b):
     DPS = (a * b)
-    print "You inflict "+str(DPS)+" points of damage!"
-    if DPS <= BEAST_HP:
-        print("The "+BEAST+" Has proven more of a challenge than expected, you decide to retreat and return another day.")
-    else:
-        print("Congratulations you have slain the "+BEAST+" and you return with a bounty of great spoils!")
+    return DPS
 
+#Print Beast Encounter
+# print "Your adventure begins wile you make your way to an old dungeon were you face a mighty "+BEAST+"!"
+#
+# def playerDPS(a, b):
+#     DPS = (a * b)
+#     print "You inflict "+str(DPS)+" points of damage!"
+#     if DPS <= BEAST_HP:
+#         print("The "+BEAST+" Has proven more of a challenge than expected, you decide to retreat and return another day.")
+#     else:
+#         print("Congratulations you have slain the "+BEAST+" and you return with a bounty of great spoils!")
+#
 DPS= playerDPS(int(STR), int(DEX))
 
 
-# DPS= playerDPS(20, 100)
-#
-# ##Original Loop for monster fight
-# while damage > 0:
-#     damage== BEAST_HP - DPS
-#     print "You inflicted"+str(DPS)+". on the foul Beast, it now has"+str(BEAST_HP)
+# DPS= playerDPS(1,5)
+
+##Original Loop for monster fight
+while BEAST_HP > 0:
+    BEAST_HP= BEAST_HP - DPS
+    print "You inflicted "+str(DPS)+". on the foul Beast, it now has "+str(BEAST_HP)
+
+if BEAST_HP <= 0:
+    print "You have slain the foul beast, you precede to go thru the dungeon and find a trove of gold and jewls."
 
