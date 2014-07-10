@@ -36,13 +36,16 @@ i = random.randint(0,3)
 #Print Beast Encounter
 print "Your adventure begins wile you make your way to an old dungeon were you face a mighty "+BEASTS[i]+"!"
 
+SKILL= raw_input ("What Skill do you wish to use?")
+
+
 def playerDPS(a, b):
     DPS = (a * b)
-    while BEAST_HP > 0:
-        BEAST_HP - DPS
-        return BEAST_HP
-        print "You inflicted"+str(DPS)+". on the foul Beast, it now has"+str(BEAST_HP)
+    return DPS
 
+DPS= playerDPS(int(STR), int(DEX))
 
-playerDPS(int(STR), int(DEX))
+while BEAST_HP > 0:
+    BEAST_HP - DPS
+    print "You inflicted"+str(DPS)+". on the foul Beast, it now has"+str(BEAST_HP)
 
