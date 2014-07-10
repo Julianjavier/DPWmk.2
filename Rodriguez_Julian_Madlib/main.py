@@ -22,7 +22,7 @@ DEX= raw_input("What is your dexterity value?")
 # LUK= raw_input("How much of a wizard are you?(0-3!)")
 
 #stats, class, beasts
-print "I see, I see... So you have "+STR+" points of STR, "+DEX+" points of DEX and "+LUK+" points LUK."
+print "I see, I see... So you have "+STR+" points of STR and "+DEX+" points of DEX ."
 
 CharacterInfo= {'Name':NAME, 'Class':CLASS, 'Home':HOME}
 
@@ -30,7 +30,7 @@ BEASTS= ["Dragon", "Ogre", "Litch", "Hell Hound"]
 
 BEAST_HP= random.randint(2000, 9999)
 
-i = random.randint(1,5)
+i = random.randint(0,3)
 
 
 #Print Beast Encounter
