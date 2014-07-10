@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ad7a95ad-d679-4cae-8e03-b6d0eaad33c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rodriguez_Julian_Madlib/main.py" afterPath="$PROJECT_DIR$/Rodriguez_Julian_Madlib/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DPWmk.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +31,7 @@
           <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Rodriguez_Julian_Madlib/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.587473" vertical-offset="287" max-vertical-offset="750">
+                <state line="41" column="18" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.7408207" vertical-offset="272" max-vertical-offset="780">
                   <folding />
                 </state>
               </provider>
@@ -365,7 +366,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Rodriguez_Julian_Madlib/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.587473" vertical-offset="287" max-vertical-offset="750">
+        <state line="41" column="18" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.7408207" vertical-offset="272" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
