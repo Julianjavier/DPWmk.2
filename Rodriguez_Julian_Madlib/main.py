@@ -39,7 +39,9 @@ print "Your adventure begins wile you make your way to an old dungeon were you f
 def playerDPS(a, b):
     DPS = (a * b)
     while BEAST_HP > 0:
-    BEAST_HP - DPS
+        BEAST_HP - DPS
+        return BEAST_HP
+        print "You inflicted"+str(DPS)+". on the foul Beast, it now has"+str(BEAST_HP)
 
 
 playerDPS(int(STR), int(DEX))
