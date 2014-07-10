@@ -1,7 +1,5 @@
-# import random
-#
-# print random.randint(1,5)
-#
+import random
+
 # #First Prompt
 # print "Well hello hail and harty traveler, welcome to my humble Inn. May I ask your name?"
 #
@@ -29,16 +27,18 @@
 # CharacterInfo= {'Name':NAME, 'Class':CLASS, 'Home':HOME}
 #
 # BEASTS= ["Dragon", "Ogre", "Litch", "Hell Hound"]
-#
+
+BEAST_HP= random.randint(2000, 9999)
+
 # i = random.randint(1,5)
 #
 #
 # #Print Beast Encounter
 # print "Your adventure begins wile you make your way to an old dungeon were you face a mighty "+BEASTS[i]+"!"
-
-def playerDPS(a, b):
-    DPS = (a * b)
-    print DPS
-
-playerDPS(int(STR), int(DEX))
+#
+# def playerDPS(a, b):
+#     DPS = (a * b)
+#     print DPS
+#
+# playerDPS(int(STR), int(DEX))
 
