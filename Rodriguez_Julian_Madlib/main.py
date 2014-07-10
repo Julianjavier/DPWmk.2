@@ -14,6 +14,8 @@ print "Ohh so you are a mighty, "+CLASS+", Very interesting..."
 HOME= raw_input("Where do you hail from?:_")
 print "I see, so you come from the land of "+HOME+", How nice."
 
+###Luck Stay(Random)
+LUK= random.randint(0,3)
 
 #Fifth Prompt
 print "Tell me more about yourself!"
@@ -29,8 +31,9 @@ CharacterInfo= {'Name':NAME, 'Class':CLASS, 'Home':HOME}
 BEASTS= ["Dragon", "Ogre", "Litch", "Hell Hound"]
 
 BEAST_HP= random.randint(2000, 9999)
+Damage= 0
 
-i = random.randint(0,3)
+# i = random.randint(0,3) Original random
 
 
 #Print Beast Encounter
@@ -38,12 +41,23 @@ print "Your adventure begins wile you make your way to an old dungeon were you f
 
 SKILL= raw_input ("What Skill do you wish to use?")
 
-
 def playerDPS(a, b):
     DPS = (a * b)
     return DPS
 
 DPS= playerDPS(int(STR), int(DEX))
+
+def MonsterDefence(a, b, c):
+    DPS = (a / b) * c
+    print "You inflict "+str(DPS)+" points of damage!"
+    if DPS <= 9999:
+        print("The "+BEASTS[i]+" Has proven more of a challenge than expected, you decide to retreat and return another day.")
+    else:
+        print("Congratulations you have slain the "+BEASTS[i]+" and you return with a bounty of great spoils!")
+
+
+# DPS= playerDPS(20, 100)
+
 
 while BEAST_HP > 0:
     BEAST_HP - DPS
