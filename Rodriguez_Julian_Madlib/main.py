@@ -45,21 +45,28 @@ def playerDPS(a, b):
     DPS = (a * b)
     return DPS
 
-DPS= playerDPS(int(STR), int(DEX))
+# DPS= playerDPS(int(STR), int(DEX))
+
+for i in range(0, int(LUK)):
+    if LUK > 4:
+        LUK == 4
+    else:
+        LUK == LUK
 
 def MonsterDefence(a, b, c):
     DPS = (a / b) * c
     print "You inflict "+str(DPS)+" points of damage!"
-    if DPS <= 9999:
+    if DPS <= BEAST_HP:
         print("The "+BEASTS[i]+" Has proven more of a challenge than expected, you decide to retreat and return another day.")
     else:
         print("Congratulations you have slain the "+BEASTS[i]+" and you return with a bounty of great spoils!")
 
+playerDPS(int(STR), int(DEX))
 
 # DPS= playerDPS(20, 100)
 
-
-while BEAST_HP > 0:
-    BEAST_HP - DPS
-    print "You inflicted"+str(DPS)+". on the foul Beast, it now has"+str(BEAST_HP)
+###Original Loop for monster fight
+# while BEAST_HP > 0:
+#     BEAST_HP - DPS
+#     print "You inflicted"+str(DPS)+". on the foul Beast, it now has"+str(BEAST_HP)
 
