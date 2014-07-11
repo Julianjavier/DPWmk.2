@@ -4,19 +4,21 @@
 
 
 ##functions
-def square_area(w,h):
+width = raw_input("width?")
+height = raw_input("height?")
+
+def calc_area(w,h):
     area= w * h
     return area
 
-def rectangle_area(w,h):
-    area= w * h
-    return area
+if width == height or height == width:
+    print "The area of this square is "+str(calc_area(int(width), int(height)))
+elif width != height or height != width:
+        print "The area of this rectangle is "+str(calc_area(int(width), int(height)))
 
-print "The area of this square is "+str(square_area(2, 100))
-
-print "The area of this rectangle is "+str(rectangle_area(2, 20))
 
 ###loop
+raw_input("press enter")
 
 bottles = 99
 
