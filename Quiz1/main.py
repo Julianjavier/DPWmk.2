@@ -10,6 +10,6 @@ def rectangle_area(w,h):
     area= w * h
     return area
 
-print "The area of a square is "+str(square_area(2, 100))
+print "The area of this square is "+str(square_area(2, 100))
 
-print "The area of a square is "+str(rectangle_area(2, 20))
+print "The area of this rectangle is "+str(rectangle_area(2, 20))
