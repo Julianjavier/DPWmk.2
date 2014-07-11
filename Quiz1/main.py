@@ -26,4 +26,4 @@ def count_down(a):
     return bottles
 
 while bottles > 0:
-    print count_down(1)
+    print str(count_down(0))+ " Bottles of Beer on the Wall, "+ str(count_down(0)) +" Bottles of Beer.. take one down and pass it around. Now you have " + str(count_down(1))  + " bottles of beer on the wall!"
