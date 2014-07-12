@@ -23,6 +23,7 @@ raw_input("press enter")
 bottles = 99
 
 def count_down(a):
+
     global bottles
     bottles = bottles - a
     return bottles
