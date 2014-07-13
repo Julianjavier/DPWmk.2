@@ -65,15 +65,17 @@ class main_page(object):
         <h3>Content2</h3>
         <h1>'''
         self.content2= var3
+
         self.radio_close=''' </h1>
         <hr>
         '''
 
         self.select_open='''
-        <h3>content3</h3>
+        <h3>Content3</h3>
 
         <h1>'''
         self.content3= var4
+
         self.select_close=''' </h1>
         <hr>
         '''
