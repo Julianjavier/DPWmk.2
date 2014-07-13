@@ -15,12 +15,12 @@
 # limitations under the License.
 #
 
-from page import
+from page import main_page
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        p=
+        p= main_page
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

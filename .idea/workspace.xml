@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ad7a95ad-d679-4cae-8e03-b6d0eaad33c2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" />
     </list>
     <ignored path="DPWmk.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,9 +37,9 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+            <state line="23" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
               <folding>
-                <element signature="e#602#618#0" expanded="true" />
+                <element signature="e#602#628#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,7 +48,7 @@
       <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="34" selection-start="803" selection-end="803" vertical-scroll-proportion="-0.01519337" vertical-offset="386" max-vertical-offset="1350">
+            <state line="13" column="29" selection-start="295" selection-end="295" vertical-scroll-proportion="0.26933703" vertical-offset="0" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -436,16 +435,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+        <state line="23" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <folding>
-            <element signature="e#602#618#0" expanded="true" />
+            <element signature="e#602#628#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="803" selection-end="803" vertical-scroll-proportion="-0.01519337" vertical-offset="386" max-vertical-offset="1350">
+        <state line="13" column="29" selection-start="295" selection-end="295" vertical-scroll-proportion="0.26933703" vertical-offset="0" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
