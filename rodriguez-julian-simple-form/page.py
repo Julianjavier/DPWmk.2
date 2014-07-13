@@ -12,22 +12,31 @@ class main_page(object):
         <div class="wrap">
         '''
         self.page_content='''
-        <form method="GET">
-            <input type="text" name="firstname" placeholder="First Name:">
-            <input type="text" name="firstname" placeholder="First Name:">
+            <form method="GET">
+                <input type="text" name="firstname" placeholder="First Name:">
+                <input type="text" name="firstname" placeholder="First Name:">
 
-        <div>
-            <input type="radio" name="rating" value="1">
-            <input type="radio" name="rating" value="2">
-            <input type="radio" name="rating" value="3">
-            <input type="radio" name="rating" value="4">
-        </div>
+            <div>
+                <input type="radio" name="rating" value="1">
+                <input type="radio" name="rating" value="2">
+                <input type="radio" name="rating" value="3">
+                <input type="radio" name="rating" value="4">
+            </div>
 
-        <select name="select">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
+            <select name="select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
 
-        </form>
+            </form>
         '''
+
+        self.page_close='''
+        </div>
+    </body>
+</html>
+        '''
+
+    def print_out(self):
+        return self.page_open + self.page_content + self.page_close
