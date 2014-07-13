@@ -21,6 +21,10 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p= main_page
+        if self.request.GET:
+            fn = self.request["firstname"]
+            ls = self.request["lastname"]
+            cn1 = self.request["content"]
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
