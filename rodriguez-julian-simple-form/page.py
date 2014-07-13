@@ -11,3 +11,17 @@ class main_page(object):
     <body>
         <div class="wrap">
         '''
+        self.page_content='''
+        <form method="GET">
+            <input type="text" name="firstname" placeholder="First Name:">
+            <input type="text" name="firstname" placeholder="First Name:">
+
+        <div>
+            <input type="radio" name="rating" value="1">
+            <input type="radio" name="rating" value="2">
+            <input type="radio" name="rating" value="3">
+            <input type="radio" name="rating" value="4">
+        </div>
+
+        </form>
+        '''
