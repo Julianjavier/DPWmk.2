@@ -15,20 +15,23 @@
 # limitations under the License.
 #
 
-from page import main_page
 import webapp2
+
+from page import main_page
 
 class MainHandler(webapp2.RequestHandler):
 
     def get(self):
         p= main_page
         if self.request.GET:
-            fn = self.request["firstname"]
-            ls = self.request["lastname"]
-            cn1 = self.request["content1"]
-            cn2 = self.request["content2"]
-            self.response.write()
+            var1 = self.request["firstname"]
+            var2 = self.request["lastname"]
+            var3 = self.request["content1"]
+            var4 = self.request["content2"]
 
+            self.response.write(p.content_page(var1, var2, var3, var4))
+        else:
+            self.response.write(p.print_out)
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
