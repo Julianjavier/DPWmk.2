@@ -19,12 +19,14 @@ from page import main_page
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
+
     def get(self):
         p= main_page
         if self.request.GET:
             fn = self.request["firstname"]
             ls = self.request["lastname"]
-            cn1 = self.request["content"]
+            cn1 = self.request["content1"]
+            cn2 = self.request["content2"]
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

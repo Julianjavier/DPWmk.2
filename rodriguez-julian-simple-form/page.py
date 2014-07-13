@@ -53,16 +53,16 @@ class main_page(object):
         <div class="wrap">
         '''
 
-        self.full_name_open='''<h1>
+        self.name_open='''<h1>
 
         '''
-        self.content1= var1+" "+var2
-        self.full_name_close='''</h1>
+        self.full_name= var1+" "+var2
+        self.name_close='''</h1>
         <hr>
         '''
 
         self.radio_open='''
-        <h3>Current Class</h3>
+        <h3>Content2</h3>
         <h1>'''
         self.content2= var3
         self.radio_close=''' </h1>
@@ -70,7 +70,7 @@ class main_page(object):
         '''
 
         self.select_open='''
-        <h3>Land of Origin</h3>
+        <h3>content3</h3>
 
         <h1>'''
         self.content3= var4
@@ -83,3 +83,8 @@ class main_page(object):
     </body>
 </html>
         '''
+
+    def return_print_out(self):
+        return self.page_open + self.name_open + self.full_name + self.name_close \
+               + self.radio_open + self.content2 + self.radio_close\
+               + self.select_open + self.content3 + self.select_close + self.page_close
