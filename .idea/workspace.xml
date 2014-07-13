@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad7a95ad-d679-4cae-8e03-b6d0eaad33c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" />
     </list>
     <ignored path="DPWmk.2.iws" />
@@ -47,7 +46,7 @@
       <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="51" selection-start="597" selection-end="597" vertical-scroll-proportion="0.41436464" vertical-offset="0" max-vertical-offset="724">
+            <state line="29" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="0.6008287" vertical-offset="0" max-vertical-offset="724">
               <folding />
             </state>
           </provider>
@@ -441,7 +440,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="51" selection-start="597" selection-end="597" vertical-scroll-proportion="0.41436464" vertical-offset="0" max-vertical-offset="724">
+        <state line="29" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="0.6008287" vertical-offset="0" max-vertical-offset="724">
           <folding />
         </state>
       </provider>
