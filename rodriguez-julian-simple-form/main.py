@@ -14,10 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+from page import
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        p=
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

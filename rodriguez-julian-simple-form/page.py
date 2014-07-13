@@ -38,5 +38,48 @@ class main_page(object):
 </html>
         '''
 
-    def print_out(self):
+    def print_out(self, var1, var2, var3, var4):
         return self.page_open + self.page_content + self.page_close
+
+    def content_page(self):
+        self.page_open='''
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wrap">
+        '''
+
+        self.full_name_open='''<h1>
+
+        '''
+        self.content1= var1+" "+var2
+        self.full_name_close='''</h1>
+        <hr>
+        '''
+
+        self.radio_open='''
+        <h3>Current Class</h3>
+        <h1>'''
+        self.content2= var3
+        self.radio_close=''' </h1>
+        <hr>
+        '''
+
+        self.select_open='''
+        <h3>Land of Origin</h3>
+
+        <h1>'''
+        self.content3= var4
+        self.select_close=''' </h1>
+        <hr>
+        '''
+
+        self.page_close='''
+        </div>
+    </body>
+</html>
+        '''

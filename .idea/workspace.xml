@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad7a95ad-d679-4cae-8e03-b6d0eaad33c2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" />
     </list>
     <ignored path="DPWmk.2.iws" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple-form/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="19" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+            <state line="20" column="78" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -37,8 +38,10 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <folding />
+            <state line="16" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <folding>
+                <element signature="e#602#618#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,7 +49,7 @@
       <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="27" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.7044199" vertical-offset="0" max-vertical-offset="724">
+            <state line="25" column="34" selection-start="803" selection-end="803" vertical-scroll-proportion="-0.01519337" vertical-offset="386" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -83,14 +86,14 @@
         <option value="$PROJECT_DIR$/simple-form/Quiz1/main.py" />
         <option value="$PROJECT_DIR$/Quiz1/main.py" />
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/app.yaml" />
-        <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" />
+        <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="68" />
-    <option name="y" value="115" />
+    <option name="x" value="74" />
+    <option name="y" value="22" />
     <option name="width" value="1443" />
     <option name="height" value="844" />
   </component>
@@ -329,7 +332,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="115" width="1443" height="844" extended-state="6" />
+    <frame x="74" y="22" width="1443" height="844" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -417,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple-form/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="17" selection-start="173" selection-end="173" vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="435">
@@ -431,16 +427,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simple-form/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="78" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
+        <state line="16" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding>
+            <element signature="e#602#618#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="27" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.7044199" vertical-offset="0" max-vertical-offset="724">
+        <state line="25" column="34" selection-start="803" selection-end="803" vertical-scroll-proportion="-0.01519337" vertical-offset="386" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
