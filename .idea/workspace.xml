@@ -29,16 +29,16 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple-form/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="51" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+            <state line="9" column="32" selection-start="206" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="4" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="31" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="0.6422652" vertical-offset="0" max-vertical-offset="724">
               <folding>
                 <element signature="e#602#628#0" expanded="true" />
               </folding>
@@ -46,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="87" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.9378453" vertical-offset="656" max-vertical-offset="1425">
+            <state line="49" column="68" selection-start="1425" selection-end="1425" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
@@ -92,8 +92,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-25" />
-    <option name="y" value="22" />
+    <option name="x" value="127" />
+    <option name="y" value="65" />
     <option name="width" value="1462" />
     <option name="height" value="844" />
   </component>
@@ -332,7 +332,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-25" y="22" width="1462" height="844" extended-state="6" />
+    <frame x="127" y="65" width="1462" height="844" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -427,26 +427,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="68" selection-start="1425" selection-end="1425" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+        <state line="9" column="32" selection-start="206" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+        <state line="31" column="0" selection-start="964" selection-end="964" vertical-scroll-proportion="0.6422652" vertical-offset="0" max-vertical-offset="724">
           <folding>
             <element signature="e#602#628#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="87" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.9378453" vertical-offset="656" max-vertical-offset="1425">
-          <folding />
         </state>
       </provider>
     </entry>

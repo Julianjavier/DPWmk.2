@@ -38,10 +38,10 @@ class main_page(object):
 </html>
         '''
 
-    def print_out(self, var1, var2, var3, var4):
+    def print_out(self):
         return self.page_open + self.page_content + self.page_close
 
-    def content_page(self):
+    def content_page(self, var1, var2, var3, var4):
         self.page_open='''
 <!DOCTYPE html>
 <html>

@@ -27,6 +27,7 @@ class MainHandler(webapp2.RequestHandler):
             ls = self.request["lastname"]
             cn1 = self.request["content1"]
             cn2 = self.request["content2"]
+            self.response.write()
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
