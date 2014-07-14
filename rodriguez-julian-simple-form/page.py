@@ -24,10 +24,12 @@ class main_page(object):
             </div>
 
             <select name="select">
-                <option value="1" name="content2">1</option>
-                <option value="2" name="content2">2</option>
-                <option value="3" name="content2">3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
             </select>
+
+            <input class="SUBMIT" type="submit" name="submit" value="SUBMIT">
 
             </form>
         '''
@@ -62,7 +64,7 @@ class main_page(object):
         '''
 
         self.radio_open='''
-        <h3>Content2</h3>
+        <h3>Content1</h3>
         <h1>'''
         self.content2= var3
 
@@ -71,7 +73,7 @@ class main_page(object):
         '''
 
         self.select_open='''
-        <h3>Content3</h3>
+        <h3>Content2</h3>
 
         <h1>'''
         self.content3= var4
@@ -86,7 +88,8 @@ class main_page(object):
 </html>
         '''
 
-    def return_print_out(self):
-        return self.page_open + self.name_open + self.full_name + self.name_close \
+        return self.page_open \
+               + self.name_open + self.full_name + self.name_close \
                + self.radio_open + self.content2 + self.radio_close\
-               + self.select_open + self.content3 + self.select_close + self.page_close
+               + self.select_open + self.content3 + self.select_close \
+               +self.page_close
