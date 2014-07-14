@@ -6,7 +6,7 @@ class main_page(object):
 <html>
     <head>
         <title></title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="wrap">
@@ -16,14 +16,14 @@ class main_page(object):
                 <input type="text" name="firstname" placeholder="First Name:">
                 <input type="text" name="lastname" placeholder="First Name:">
 
-            <div>
-                <input type="radio" name="content1" value="1">
-                <input type="radio" name="content1" value="2">
-                <input type="radio" name="content1" value="3">
-                <input type="radio" name="content1" value="4">
+            <div class="check-box">
+                <input type="radio" name="content1" value="1">1
+                <input type="radio" name="content1" value="2">2
+                <input type="radio" name="content1" value="3">3
+                <input type="radio" name="content1" value="4">4
             </div>
 
-            <select name="select">
+            <select name="select" class="select-list">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -49,7 +49,7 @@ class main_page(object):
 <html>
     <head>
         <title></title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="wrap">

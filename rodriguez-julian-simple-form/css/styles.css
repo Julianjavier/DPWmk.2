@@ -1,0 +1,12 @@
+body{
+    font-family:helvetica;
+    padding:40px 0 0 0;
+    background-image:url('../img/back-pizza.png');
+}
+
+.wrap{
+    background-color:#FFF;
+    margin:0 auto;
+    padding:15px;
+    width:50%;
+}
