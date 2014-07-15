@@ -30,10 +30,10 @@ class main_page(object):
             <div class="check-box">
                 <hr>
                 <h3>Toppings</h3>
-                <input type="checkbox" name="content1" value="Meat-Lovers"><p>Meat-Lovers</p><br>
-                <input type="checkbox" name="content1" value="Peperoni"><p>Peperoni</p><br>
-                <input type="checkbox" name="content1" value="Pineapple"><p>Pineapple</p><br>
-                <input type="checkbox" name="content1" value="The-Flying-Calzo"><p>The Flying Calzo</p><br>
+                <input type="checkbox" name="topping1" value="Meat-Lovers"><p>Meat-Lovers</p><br>
+                <input type="checkbox" name="topping2" value="Peperoni"><p>Peperoni</p><br>
+                <input type="checkbox" name="topping3" value="Pineapple"><p>Pineapple</p><br>
+                <input type="checkbox" name="topping4" value="The Flying Calzo"><p>The Flying Calzo</p><br>
                 <hr>
             </div>
 
@@ -101,7 +101,6 @@ class main_page(object):
         self.content3= var4
 
         self.select_close=''' </h1>
-        <hr>
         '''
 
         self.page_close='''

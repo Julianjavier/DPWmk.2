@@ -28,9 +28,26 @@ class MainHandler(webapp2.RequestHandler):
         if self.request.GET:
             var1 = self.request.GET["firstname"]
             var2 = self.request.GET["lastname"]
-            var3 = self.request.GET["content1"]
+            var3 = ','
             var4 = self.request.GET["select"]
             var5 = self.request.GET["address"]
+
+            # if self.request.GET["topping1"]:
+            #     var3 += self.request.GET["topping1"]
+
+            # if self.request.GET["topping2"]:
+            #     var3 += self.request.GET["topping2"]
+            #
+            # if self.request.GET["topping3"]:
+            #     var3 += self.request.GET["topping3"]
+            #
+            # if self.request.GET["topping4"]:
+            #     var3 += self.request.GET["topping4"]
+
+            var3 += ' ' + self.request.get("topping1", default_value = ' ')
+            var3 += ' ' + self.request.get("topping2", default_value = ' ')
+            var3 += ' ' + self.request.get("topping3", default_value = ' ')
+            var3 += ' ' + self.request.get("topping4", default_value = ' ')
 
             self.response.write(p.content_page(var1, var2, var3, var4, var5))
         else:
