@@ -22,26 +22,27 @@ class main_page(object):
                 <input type="text" name="lastname" placeholder="Last Name:">
             </div>
 
-            <div class="e-mail">
-                <h3>E-Mail</h3>
-                <input type="text" name="e-mail" placeholder="First Name:">
+            <div class="address">
+                <h3>Address</h3>
+                <input type="text" name="address" placeholder="Address:">
             </div>
 
             <div class="check-box">
                 <hr>
-                <h3>E-Mail</h3>
-                <input type="radio" name="content1" value="1"><p>1</p><br>
-                <input type="radio" name="content1" value="2"><p>2</p><br>
-                <input type="radio" name="content1" value="3"><p>3</p><br>
-                <input type="radio" name="content1" value="4"><p>4</p><br>
+                <h3>Toppings</h3>
+                <input type="checkbox" name="content1" value="Meat-Lovers"><p>Meat-Lovers</p><br>
+                <input type="checkbox" name="content1" value="Peperoni"><p>Peperoni</p><br>
+                <input type="checkbox" name="content1" value="Pineapple"><p>Pineapple</p><br>
+                <input type="checkbox" name="content1" value="The-Flying-Calzo"><p>The Flying Calzo</p><br>
                 <hr>
             </div>
 
             <h3>Serving Size</h3>
             <select name="select" class="select-list">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="Personal">Personal</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
             </select>
 
             <input class="SUBMIT" type="submit" name="submit" value="SUBMIT">
@@ -58,7 +59,7 @@ class main_page(object):
     def print_out(self):
         return self.page_open + self.page_content + self.page_close
 
-    def content_page(self, var1, var2, var3, var4):
+    def content_page(self, var1, var2, var3, var4, var5):
         self.page_open='''
 <!DOCTYPE html>
 <html>
@@ -75,11 +76,17 @@ class main_page(object):
         '''
         self.full_name= var1+" "+var2
         self.name_close='''</h1>
-        <hr>
         '''
 
+        self.address_open='''<h3>'''
+        self.address= var5
+        self.address_close='''</h3>
+         <hr>
+        '''
+
+
         self.radio_open='''
-        <h3>Content1</h3>
+        <h3>Toppings</h3>
         <h1>'''
         self.content2= var3
 
@@ -88,7 +95,7 @@ class main_page(object):
         '''
 
         self.select_open='''
-        <h3>Content2</h3>
+        <h3>Serving Size</h3>
 
         <h1>'''
         self.content3= var4
@@ -105,6 +112,7 @@ class main_page(object):
 
         return self.page_open \
                + self.name_open + self.full_name + self.name_close \
+               + self.address_open + self.address + self.address_close\
                + self.radio_open + self.content2 + self.radio_close\
                + self.select_open + self.content3 + self.select_close \
                +self.page_close

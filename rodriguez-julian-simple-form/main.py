@@ -30,8 +30,9 @@ class MainHandler(webapp2.RequestHandler):
             var2 = self.request.GET["lastname"]
             var3 = self.request.GET["content1"]
             var4 = self.request.GET["select"]
+            var5 = self.request.GET["address"]
 
-            self.response.write(p.content_page(var1, var2, var3, var4))
+            self.response.write(p.content_page(var1, var2, var3, var4, var5))
         else:
             self.response.write(p.print_out())
 

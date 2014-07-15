@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad7a95ad-d679-4cae-8e03-b6d0eaad33c2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css" />
     </list>
@@ -29,7 +30,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+            <state line="22" column="0" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
               <folding>
                 <element signature="e#602#616#0" expanded="true" />
               </folding>
@@ -37,19 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
+            <state line="34" column="37" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.7044199" vertical-offset="0" max-vertical-offset="1845">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="14" selection-start="329" selection-end="329" vertical-scroll-proportion="0.45064378" vertical-offset="0" max-vertical-offset="1110">
+            <state line="47" column="7" selection-start="652" selection-end="652" vertical-scroll-proportion="-14.16" vertical-offset="351" max-vertical-offset="1110">
               <folding />
             </state>
           </provider>
@@ -86,9 +87,9 @@
         <option value="$PROJECT_DIR$/simple-form/Quiz1/main.py" />
         <option value="$PROJECT_DIR$/Quiz1/main.py" />
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/app.yaml" />
+        <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css" />
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" />
-        <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css" />
       </list>
     </option>
   </component>
@@ -473,23 +474,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+        <state line="22" column="0" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding>
             <element signature="e#602#616#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1725">
+        <state line="47" column="7" selection-start="652" selection-end="652" vertical-scroll-proportion="-14.16" vertical-offset="351" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="14" selection-start="329" selection-end="329" vertical-scroll-proportion="0.45064378" vertical-offset="0" max-vertical-offset="1110">
+        <state line="34" column="37" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.7044199" vertical-offset="0" max-vertical-offset="1845">
           <folding />
         </state>
       </provider>
