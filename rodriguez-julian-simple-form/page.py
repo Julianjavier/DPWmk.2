@@ -10,19 +10,34 @@ class main_page(object):
     </head>
     <body>
         <div class="wrap">
+
+        <img src="img/fly.png"/>
         '''
         self.page_content='''
             <form method="GET">
-                <input type="text" name="firstname" placeholder="First Name:">
-                <input type="text" name="lastname" placeholder="First Name:">
 
-            <div class="check-box">
-                <input type="radio" name="content1" value="1">1
-                <input type="radio" name="content1" value="2">2
-                <input type="radio" name="content1" value="3">3
-                <input type="radio" name="content1" value="4">4
+            <div class="fullname">
+                <h3>Full Name</h3>
+                <input type="text" name="firstname" placeholder="First Name:">
+                <input type="text" name="lastname" placeholder="Last Name:">
             </div>
 
+            <div class="e-mail">
+                <h3>E-Mail</h3>
+                <input type="text" name="e-mail" placeholder="First Name:">
+            </div>
+
+            <div class="check-box">
+                <hr>
+                <h3>E-Mail</h3>
+                <input type="radio" name="content1" value="1"><p>1</p><br>
+                <input type="radio" name="content1" value="2"><p>2</p><br>
+                <input type="radio" name="content1" value="3"><p>3</p><br>
+                <input type="radio" name="content1" value="4"><p>4</p><br>
+                <hr>
+            </div>
+
+            <h3>Serving Size</h3>
             <select name="select" class="select-list">
                 <option value="1">1</option>
                 <option value="2">2</option>
