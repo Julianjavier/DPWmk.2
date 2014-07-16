@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad7a95ad-d679-4cae-8e03-b6d0eaad33c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/getter-setter/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" afterPath="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DPWmk.2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,38 +28,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
+        <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="11" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.52348065" vertical-offset="191" max-vertical-offset="960">
-              <folding>
-                <element signature="e#602#616#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="42" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1830">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="7" selection-start="652" selection-end="652" vertical-scroll-proportion="-14.16" vertical-offset="351" max-vertical-offset="1110">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/app.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="435">
+            <state line="20" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.41436464" vertical-offset="0" max-vertical-offset="724">
               <folding />
             </state>
           </provider>
@@ -89,13 +61,16 @@
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css" />
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/page.py" />
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
+        <option value="$PROJECT_DIR$/getter-setter/views.py" />
+        <option value="$PROJECT_DIR$/getter-setter/main.py" />
+        <option value="$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="32" />
-    <option name="width" value="1300" />
+    <option name="x" value="269" />
+    <option name="y" value="22" />
+    <option name="width" value="1171" />
     <option name="height" value="844" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -124,6 +99,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,49 +128,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rodriguez-julian-simple-form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPWmk.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPWmk.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rodriguez-julian-simple-form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPWmk.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DPWmk.2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rodriguez-julian-simple-form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="rodriguez-julian-encapsulated-calculator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,26 +308,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="32" width="1300" height="844" extended-state="0" />
+    <frame x="269" y="22" width="1171" height="844" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22830336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25391304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39893618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -408,11 +347,51 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IntoToPython/main.py">
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.34663865" vertical-offset="0" max-vertical-offset="476">
+        <state line="37" column="15" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1035">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="21" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="15" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="22" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="7" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0" vertical-offset="351" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntoToPython/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.34663865" vertical-offset="0" max-vertical-offset="476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../DPW/Rodriguez_Julian_Madlib/main.py">
@@ -424,23 +403,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple-form/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="1" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
+        <state line="3" column="1" selection-start="35" selection-end="35" vertical-scroll-proportion="-1.8" vertical-offset="0" max-vertical-offset="135" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple-form/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.6651885" vertical-offset="0" max-vertical-offset="451">
-          <folding />
-        </state>
+        <state line="20" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.6651885" vertical-offset="0" max-vertical-offset="451" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple-form/Quiz1/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="114" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
+        <state line="9" column="16" selection-start="114" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rodriguez_Julian_Madlib/main.py">
@@ -452,45 +425,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Quiz1/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="14" selection-start="529" selection-end="548" vertical-scroll-proportion="0.6760259" vertical-offset="107" max-vertical-offset="570">
-          <folding />
-        </state>
+        <state line="28" column="14" selection-start="529" selection-end="548" vertical-scroll-proportion="0.6760259" vertical-offset="107" max-vertical-offset="570" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="23" selection-start="875" selection-end="875" vertical-scroll-proportion="0.8494475" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
+        <state line="41" column="23" selection-start="875" selection-end="875" vertical-scroll-proportion="0.8494475" vertical-offset="0" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="7" selection-start="652" selection-end="652" vertical-scroll-proportion="-14.16" vertical-offset="351" max-vertical-offset="1110">
+        <state line="47" column="7" selection-start="652" selection-end="652" vertical-scroll-proportion="0.50499284" vertical-offset="351" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="-11.4" vertical-offset="0" max-vertical-offset="435">
+        <state line="19" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.40656206" vertical-offset="0" max-vertical-offset="701">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
+    <entry file="file://$PROJECT_DIR$/getter-setter/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1830">
+        <state line="24" column="32" selection-start="785" selection-end="785" vertical-scroll-proportion="0.49586776" vertical-offset="0" max-vertical-offset="726">
+          <folding>
+            <element signature="e#601#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getter-setter/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="18" selection-start="72" selection-end="72" vertical-scroll-proportion="0.10330579" vertical-offset="0" max-vertical-offset="726">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="11" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.52348065" vertical-offset="191" max-vertical-offset="960">
-          <folding>
-            <element signature="e#602#616#0" expanded="true" />
-          </folding>
+        <state line="37" column="15" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-simple-form/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="21" selection-start="534" selection-end="534" vertical-scroll-proportion="-1.0925415" vertical-offset="1106" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.41436464" vertical-offset="0" max-vertical-offset="724">
+          <folding />
         </state>
       </provider>
     </entry>
