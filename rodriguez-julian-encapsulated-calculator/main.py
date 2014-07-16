@@ -17,11 +17,25 @@
 import webapp2
 
 from page import constructor
+from page import Page
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
         self.response.write("Herro")
+
+        p = Page()
+
+        bodark = constructor()
+        bodark.name="Bodark Bjorn"
+        bodark.str = 15
+        bodark.dex = 7
+        bodark.chr = 8
+        bodark.int = 3
+
+        bodark.update()
+
 
 
 

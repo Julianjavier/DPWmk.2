@@ -7,7 +7,10 @@ class constructor(object):
         self.__agl = 0                  ## These will hold values for the character sheet
         self.__int = 0                                                                 ##
         self.__con = 0                                                                 ##
-        self.__totla = self.__str + self.__def + self.__agl + self.__int + self.__con  ##
+
+    @property
+    def total(self):
+        return self.__str + self.__def + self.__agl + self.__int + self.__con
 
 class Page(object):
     def __init__(self):
@@ -85,3 +88,18 @@ class Page(object):
         '''
 
         self.__all = self.__open + str(self.__content) + self.__close
+
+        def print_info(self):
+            return self.__all
+
+
+        @property   ##getter
+        def totalVal(self):
+            return self.__all
+
+        @totalVal.setter  ##setter
+        def totalVal(self, newTotal):
+            self.__all = str(newTotal)
+
+        def update(self):
+            self.__all = self.__all.format(**locals())
