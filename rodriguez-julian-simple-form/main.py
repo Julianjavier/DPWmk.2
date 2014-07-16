@@ -32,9 +32,14 @@ class MainHandler(webapp2.RequestHandler):
             var4 = self.request.GET["select"]
             var5 = self.request.GET["address"]
 
+            # if 'topping1' in self.request.GET:
+            #     print 'IS THERE!!!'
+            # else:
+            #     print 'IS NOT THERE'
+            #
             # if self.request.GET["topping1"]:
             #     var3 += self.request.GET["topping1"]
-
+            #
             # if self.request.GET["topping2"]:
             #     var3 += self.request.GET["topping2"]
             #
