@@ -16,18 +16,14 @@
 #
 import webapp2
 
+from page import constructor
+
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
-class constructor(object):
-    def __init__(self):
-        self.__name = ""    ##
-        self.__str = 0      ##
-        self.__def = 0      ##
-        self.__agl = 0      ## These will hold values for the character sheet
-        self.__int = 0      ##
-        self.__con = 0      ##
-        self.__totla = 0    ##
+        self.response.write("Herro")
+
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
