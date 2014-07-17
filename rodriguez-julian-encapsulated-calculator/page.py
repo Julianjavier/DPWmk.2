@@ -4,6 +4,7 @@ class Character(object):
         self.__name = ""                                                               ##
         self.__str = 0                                                                 ##
         self.__dex = 0                  ## These will hold values for the character sheet
+        self.__chr = 0
         self.__int = 0                                                                 ##
         self.__con = 0                                                                 ##
 
@@ -25,7 +26,6 @@ class Character(object):
     def str(self, str):
         self.__str = str
 
-
     ###
     @property
     def dex(self):
@@ -37,12 +37,12 @@ class Character(object):
 
     ###
     @property
-    def int(self):
-        return self.__int
+    def chr(self):
+        return self.__chr
 
-    @int.setter
-    def int(self, int):
-        self.__int = int
+    @chr.setter
+    def chr(self, chr):
+        self.__chr = chr
 
     ###
     @property
@@ -64,7 +64,7 @@ class Character(object):
 
     @property
     def total(self):
-        return self.__str + self.__dex + self.__int + self.__con
+        return self.__str + self.__dex + self.__chr + self.__int + self.__con
 
 class Page(object):
     def __init__(self):

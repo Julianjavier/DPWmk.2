@@ -37,12 +37,12 @@ class MainHandler(webapp2.RequestHandler):
 
 
         nock = Character()
-        nock.name= "Nock Fletching"
-        nock.str = 7
-        nock.dex = 15
-        nock.chr = 12
-        nock.int = 6
-        nock.con = 3
+        nock.__name= "Nock Fletching"
+        nock.__str = 7
+        nock.__dex = 15
+        nock.__chr = 12
+        nock.__int = 6
+        nock.__con = 3
 
         players = {
             "bodark":bodark,
@@ -59,7 +59,7 @@ class MainHandler(webapp2.RequestHandler):
                     render = p.print_info()
 
         else:
-            render = "404"
+            render =  p.character(players["bodark"])
 
         self.response.write(render)
 
