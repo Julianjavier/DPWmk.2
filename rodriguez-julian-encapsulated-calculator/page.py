@@ -8,11 +8,12 @@ class Character(object):
         self.__int = 10                                                                 ##
         self.__con = 10                                                                 ##
 
-    ###
+    ###getter for private variable
     @property
     def name(self):
         return self.__name
 
+    ###setter for private variable
     @name.setter
     def name(self, name):
         self.__name = name
