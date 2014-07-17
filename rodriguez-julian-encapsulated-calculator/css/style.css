@@ -10,3 +10,15 @@ h2{
    font-weight:400;
    color:#008cba;
 }
+
+h3{
+   font-family: 'Cinzel', serif;
+   font-weight:400;
+   color:#008cba;
+}
+
+nav{
+    width:15%;
+    float:left;
+    margin:0 0 0 10xp;
+}
