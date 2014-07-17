@@ -7,6 +7,7 @@ class Character(object):
         self.__int = 0                                                                 ##
         self.__con = 0                                                                 ##
 
+    ###
     @property
     def name(self):
         return self.__name
@@ -15,9 +16,55 @@ class Character(object):
     def name(self, name):
         self.__name = name
 
+    ###
+    @property
+    def str(self):
+        return self.__str
+
+    @str.setter
+    def str(self, str):
+        self.__str = str
+
+
+    ###
+    @property
+    def dex(self):
+        return self.__dex
+
+    @dex.setter
+    def dex(self, dex):
+        self.__dex = dex
+
+    ###
+    @property
+    def int(self):
+        return self.__int
+
+    @int.setter
+    def int(self, int):
+        self.__int = int
+
+    ###
+    @property
+    def int(self):
+        return self.__int
+
+    @int.setter
+    def int(self, int):
+        self.__int = int
+
+    ###
+    @property
+    def con(self):
+        return self.__con
+
+    @con.setter
+    def con(self, con):
+        self.__con = con
+
     @property
     def total(self):
-        return self.str + self.dex + self.int + self.con
+        return self.__str + self.__dex + self.__int + self.__con
 
 class Page(object):
     def __init__(self):
@@ -97,11 +144,11 @@ class Page(object):
         </html>
         '''
 
-    def print_info(self):
+    def print_info(self): ##function to print page
         all = self.__open + str(self.__content) + self.__close
         return all.format(**locals())
 
-    def character(self, character):
+    def character(self, character): ##function to link format link
         self.character = character
 
     # @property   ##getter

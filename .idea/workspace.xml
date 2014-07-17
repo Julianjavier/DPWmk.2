@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad7a95ad-d679-4cae-8e03-b6d0eaad33c2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py" afterPath="$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/page.py" afterPath="$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/page.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="23" selection-start="969" selection-end="969" vertical-scroll-proportion="0.3107735" vertical-offset="300" max-vertical-offset="1170">
+            <state line="40" column="20" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="1170">
               <folding>
                 <element signature="e#601#615#0" expanded="true" />
               </folding>
@@ -38,11 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="48" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
-              <folding />
+            <state line="61" column="8" selection-start="1271" selection-end="1271" vertical-scroll-proportion="-0.49447513" vertical-offset="1108" max-vertical-offset="2310">
+              <folding>
+                <element signature="e#551#569#0" expanded="false" />
+                <element signature="e#622#640#0" expanded="false" />
+                <element signature="e#691#708#0" expanded="false" />
+                <element signature="e#758#774#0" expanded="false" />
+                <element signature="e#826#843#0" expanded="false" />
+                <element signature="e#893#909#0" expanded="false" />
+                <element signature="e#960#977#0" expanded="false" />
+                <element signature="e#1027#1043#0" expanded="false" />
+                <element signature="e#1094#1111#0" expanded="false" />
+                <element signature="e#1161#1177#0" expanded="false" />
+                <element signature="e#1228#1245#0" expanded="false" />
+                <element signature="e#1295#1311#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,8 +86,8 @@
         <option value="$PROJECT_DIR$/rodriguez-julian-simple-form/main.py" />
         <option value="$PROJECT_DIR$/getter-setter/views.py" />
         <option value="$PROJECT_DIR$/getter-setter/main.py" />
-        <option value="$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/page.py" />
         <option value="$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py" />
+        <option value="$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/page.py" />
       </list>
     </option>
   </component>
@@ -322,13 +334,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="270" y="22" width="1171" height="844" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25391304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25391304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39893618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -393,7 +405,20 @@
     <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="15" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1665">
-          <folding />
+          <folding>
+            <element signature="e#551#569#0" expanded="false" />
+            <element signature="e#622#640#0" expanded="false" />
+            <element signature="e#691#708#0" expanded="false" />
+            <element signature="e#758#774#0" expanded="false" />
+            <element signature="e#826#843#0" expanded="false" />
+            <element signature="e#893#909#0" expanded="false" />
+            <element signature="e#960#977#0" expanded="false" />
+            <element signature="e#1027#1043#0" expanded="false" />
+            <element signature="e#1094#1111#0" expanded="false" />
+            <element signature="e#1161#1177#0" expanded="false" />
+            <element signature="e#1228#1245#0" expanded="false" />
+            <element signature="e#1295#1311#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -497,18 +522,31 @@
         <state line="21" column="21" selection-start="534" selection-end="534" vertical-scroll-proportion="-1.0925415" vertical-offset="1106" max-vertical-offset="1830" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/page.py">
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="48" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
-          <folding />
+        <state line="40" column="20" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="311" max-vertical-offset="1170">
+          <folding>
+            <element signature="e#601#615#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/main.py">
+    <entry file="file://$PROJECT_DIR$/rodriguez-julian-encapsulated-calculator/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="23" selection-start="969" selection-end="969" vertical-scroll-proportion="0.3107735" vertical-offset="300" max-vertical-offset="1170">
+        <state line="61" column="8" selection-start="1271" selection-end="1271" vertical-scroll-proportion="-0.49447513" vertical-offset="1108" max-vertical-offset="2310">
           <folding>
-            <element signature="e#601#615#0" expanded="true" />
+            <element signature="e#551#569#0" expanded="false" />
+            <element signature="e#622#640#0" expanded="false" />
+            <element signature="e#691#708#0" expanded="false" />
+            <element signature="e#758#774#0" expanded="false" />
+            <element signature="e#826#843#0" expanded="false" />
+            <element signature="e#893#909#0" expanded="false" />
+            <element signature="e#960#977#0" expanded="false" />
+            <element signature="e#1027#1043#0" expanded="false" />
+            <element signature="e#1094#1111#0" expanded="false" />
+            <element signature="e#1161#1177#0" expanded="false" />
+            <element signature="e#1228#1245#0" expanded="false" />
+            <element signature="e#1295#1311#0" expanded="false" />
           </folding>
         </state>
       </provider>
