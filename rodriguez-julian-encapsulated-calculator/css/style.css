@@ -40,3 +40,13 @@ nav a{
     float:left;
     margin:0 0 0 100px;
 }
+
+header{
+    padding: 20px 10px;
+    background-image:url("../img/triangular.jpg");
+    margin:0 auto 30px auto;
+}
+
+ header img{
+    width:400px;
+}
