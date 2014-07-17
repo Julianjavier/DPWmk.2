@@ -16,7 +16,7 @@
 #
 import webapp2
 
-from page import constructor
+from page import Character
 from page import Page
 
 
@@ -27,14 +27,42 @@ class MainHandler(webapp2.RequestHandler):
 
         p = Page()
 
-        bodark = constructor()
+        bodark = Character()
         bodark.name="Bodark Bjorn"
         bodark.str = 15
         bodark.dex = 7
         bodark.chr = 8
         bodark.int = 3
+        bodark.con = 10
 
-        bodark.update()
+
+        nock = Character()
+        nock.name= "Nock Fletching"
+        nock.str = 7
+        nock.dex = 15
+        nock.chr = 12
+        nock.int = 6
+        nock.con = 3
+
+        players = {
+            "bodark":bodark,
+            "nock":nock
+        }
+
+        if self.request.GET:
+            if self.request.GET.has_key('char'):
+
+                character = self.request.GET['char']
+
+                if players.has_key(character):
+                    p.character(players[character])
+                    render = p.print_info()
+
+        else:
+            render = "404"
+
+        self.response.write(render)
+
 
 
 
