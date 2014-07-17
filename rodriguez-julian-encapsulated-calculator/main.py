@@ -23,7 +23,6 @@ from page import Page
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
-        self.response.write("Herro")
 
         p = Page()
 
@@ -37,17 +36,20 @@ class MainHandler(webapp2.RequestHandler):
 
 
         nock = Character()
-        nock.__name= "Nock Fletching"
-        nock.__str = 7
-        nock.__dex = 15
-        nock.__chr = 12
-        nock.__int = 6
-        nock.__con = 3
+        nock.name= "Nock Fletching"
+        nock.str = 7
+        nock.dex = 15
+        nock.chr = 12
+        nock.int = 6
+        nock.con = 3
 
         players = {
             "bodark":bodark,
             "nock":nock
         }
+
+        p.character(players["bodark"])
+        render =  p.print_info()
 
         if self.request.GET:
             if self.request.GET.has_key('char'):
@@ -57,9 +59,6 @@ class MainHandler(webapp2.RequestHandler):
                 if players.has_key(character):
                     p.character(players[character])
                     render = p.print_info()
-
-        else:
-            render =  p.character(players["bodark"])
 
         self.response.write(render)
 

@@ -2,11 +2,11 @@
 class Character(object):
     def __init__(self):
         self.__name = ""                                                               ##
-        self.__str = 0                                                                 ##
-        self.__dex = 0                  ## These will hold values for the character sheet
-        self.__chr = 0
-        self.__int = 0                                                                 ##
-        self.__con = 0                                                                 ##
+        self.__str = 10                                                                 ##
+        self.__dex = 10                  ## These will hold values for the character sheet
+        self.__chr = 10
+        self.__int = 10                                                                 ##
+        self.__con = 10                                                                 ##
 
     ###
     @property
