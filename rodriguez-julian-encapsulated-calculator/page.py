@@ -80,14 +80,15 @@ class Page(object):
             <head>
                 <title></title>
                 <link href="css/style.css" rel="stylesheet" type="text/css">
-
+                <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
             </head>
         <body>
 
+            <header>
+                <img src="img/Vagrant.png">
+            </header>
+
             <div class="wrap">
-                <header>
-                    <img src="img/Title-01.png">
-                </header>
 
         '''
         self.__content = '''
