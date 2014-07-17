@@ -88,17 +88,17 @@ class Page(object):
                 <img src="img/Vagrant.png">
             </header>
 
+            <nav>
+                <a href="?char=bodark" >Bodark Bjorn</a>
+                <a href="?char=nock" >Nock Fletching</a>
+                <a href="?char=magnar" >Magnar Magnil</a>
+                <a href="?char=lina" >Lina Medina</a>
+            </nav>
+
             <div class="wrap">
 
         '''
         self.__content = '''
-
-                <nav>
-                    <a href="?char=bodark" >Bodark Bjorn</a>
-                    <a href="?char=nock" >Nock Fletching</a>
-                    <a href="?char=magnar" >Magnar Magnil</a>
-                    <a href="?char=lina" >Lina Medina</a>
-                </nav>
 
                     <h2>{self.character.name}</h2>
                     <hr>
@@ -141,6 +141,7 @@ class Page(object):
 
         self.__close = '''
             </div>
+            <div class="fake"></div>
             <footer> <p>Property  of Team Vagrant</p> </footer
         </body>
         </html>
