@@ -50,3 +50,15 @@ header{
  header img{
     width:400px;
 }
+
+.wrap div {
+    overflow:hidden;
+}
+
+.wrap div .inline{
+    float:left;
+}
+
+.wrap div p{
+    float:right;
+}
