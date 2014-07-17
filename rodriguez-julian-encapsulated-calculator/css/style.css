@@ -22,3 +22,15 @@ nav{
     float:left;
     margin:0 0 0 10xp;
 }
+
+nav a{
+    display:block;
+    text-decoration:none;
+    color:#FFF;
+    background:#008cba;
+    text-align:center;
+    height:40px;
+    line-height:inherit;
+    margin:0 0 20px 0;
+ /*   padding:17.5px 0 0 0; */
+}
