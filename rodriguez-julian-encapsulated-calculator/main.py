@@ -43,9 +43,28 @@ class MainHandler(webapp2.RequestHandler):
         nock.int = 6
         nock.con = 3
 
+        magnar = Character()
+        magnar.name="Magnar Magnil"
+        magnar.str = 16
+        magnar.dex = 17
+        magnar.chr = 10
+        magnar.int = 2
+        magnar.con = 8
+
+
+        lina = Character()
+        lina.name= "Lina Medina"
+        lina.str = 5
+        lina.dex = 5
+        lina.chr = 3
+        lina.int = 15
+        lina.con = 15
+
         players = {
             "bodark":bodark,
-            "nock":nock
+            "nock":nock,
+            "magnar":magnar,
+            "lina":lina
         }
 
         p.character(players["bodark"])
