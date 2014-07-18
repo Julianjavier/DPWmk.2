@@ -71,7 +71,7 @@ class Page(object):
     def __init__(self):
         ##HTML Template
 
-        self.charcter = Character()
+        self.character = Character()
 
         self.__open = '''
 
@@ -150,9 +150,6 @@ class Page(object):
     def print_info(self): ##function to print page
         all = self.__open + str(self.__content) + self.__close
         return all.format(**locals())
-
-    def character(self, character): ##function to link format link
-        self.character = character
 
     # @property   ##getter
     # def totalVal(self):

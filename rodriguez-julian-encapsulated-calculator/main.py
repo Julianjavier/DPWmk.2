@@ -67,7 +67,7 @@ class MainHandler(webapp2.RequestHandler):
             "lina":lina
         }
 
-        p.character(players["bodark"])
+        p.character = players["bodark"]
         render =  p.print_info()
 
         if self.request.GET:
@@ -76,7 +76,7 @@ class MainHandler(webapp2.RequestHandler):
                 character = self.request.GET['char']
 
                 if players.has_key(character):
-                    p.character(players[character])
+                    p.character= players[character]
                     render = p.print_info()
 
         self.response.write(render)

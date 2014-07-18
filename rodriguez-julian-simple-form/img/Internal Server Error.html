@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Internal Server Error</title>
+    <style>
+      body {
+        padding: 20px;
+        font-family: arial, sans-serif;
+        font-size: 14px;
+      }
+      pre {
+        background: #F2F2F2;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Internal Server Error</h1>
+    <p>The server has either erred or is incapable of performing
+    the requested operation.</p>
+    <pre>Traceback (most recent call last):
+  File &quot;/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webapp2-2.5.2/webapp2.py&quot;, line 1535, in __call__
+    rv = self.handle_exception(request, response, e)
+  File &quot;/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webapp2-2.5.2/webapp2.py&quot;, line 1529, in __call__
+    rv = self.router.dispatch(request, response)
+  File &quot;/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webapp2-2.5.2/webapp2.py&quot;, line 1278, in default_dispatcher
+    return route.handler_adapter(request, response)
+  File &quot;/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webapp2-2.5.2/webapp2.py&quot;, line 1102, in __call__
+    return handler.dispatch()
+  File &quot;/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webapp2-2.5.2/webapp2.py&quot;, line 572, in dispatch
+    return self.handle_exception(e, self.app.debug)
+  File &quot;/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/lib/webapp2-2.5.2/webapp2.py&quot;, line 570, in dispatch
+    return method(*args, **kwargs)
+  File &quot;/Applications/MAMP/htdocs/DPWmk.2/rodriguez-julian-encapsulated-calculator/main.py&quot;, line 70, in get
+    p.character(players[&quot;bodark&quot;])
+TypeError: 'Character' object is not callable
+</pre>
+  </body>
+</html>
