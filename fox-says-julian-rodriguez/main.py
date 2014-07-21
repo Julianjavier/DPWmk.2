@@ -21,6 +21,24 @@ class MainHandler(webapp2.RequestHandler):
         p = PageBuilder()
         p.title = "Welcome!"
 
+        whale = Whale()
+        wolf = Wolf()
+        lion = Lion()
+
+        if self.request.GET:
+            animal = self.request.GET['an']
+
+            if animal == "o1":
+                p.animal = whale
+            elif animal == "o2":
+                p.animal = wolf
+            elif animal == "o3":
+                p.animal = lion
+            else:
+                p.animal == lion
+
+        self.response.write(p.print_out())
+
 class PageBuilder(object):
     def __init__(self):
 
@@ -52,9 +70,9 @@ class PageBuilder(object):
         </html>
         '''
 
-        def print_out(self):
-            output = self.open + self.nav + self.content + self.close
-            return output.format(**locals())
+    def print_out(self):
+        output = self.open + self.nav + self.content + self.close
+        return output.format(**locals())
 
 class Animal(object):
      def __init__(self):
