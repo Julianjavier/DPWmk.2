@@ -51,6 +51,25 @@ class PageBuilder(object):
         </html>
         '''
 
+class Animal(object):
+     def __init__(self):
+
+        self._sound = "Null"
+
+        self.name = ""
+        self.phylum = ""
+        self.a_class = ""
+        self.order = ""
+        self.family = ""
+        self.genus = ""
+        self.url = ""
+        self.life = ""
+        self.habitat = ""
+        self.geolocation = ""
+
+
+
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
