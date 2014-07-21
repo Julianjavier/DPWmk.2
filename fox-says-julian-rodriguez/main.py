@@ -54,6 +54,28 @@ class PageBuilder(object):
 
         '''
 
+        self.content = '''
+
+            <hr>
+
+            <img src="{self.animal.url}">
+
+            <div>
+                <h1>{self.animal.name}</h1>
+                <li>Phylum: {self.animal.phylum}</li>
+                <li>Class: {self.animal.a_class}</li>
+                <li>Order: {self.animal.order}</li>
+                <li>Family: {self.animal.family}</li>
+                <li>Genus: {self.animal.genus}</li>
+                <li>Life Span: {self.animal.life}</li>
+                <li>Habitat: {self.animal.habitat}</li>
+                <li>Geolocation: {self.animal.geolocation}</li>
+                <li>Sound: {self.animal.sound}</li>
+            </div>
+
+        </div>
+        '''
+
         self.nav= '''
        <nav>
             <ul>
