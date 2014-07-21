@@ -68,6 +68,23 @@ class Animal(object):
         self.geolocation = ""
 
 
+class Wolf(Animal):
+    def __init__(self):
+
+        Animal.__init__(self)
+
+        self._sound = "HOOOOOWWWWWWLLLLLL"
+
+        self.name = "German Grey Wolf"
+        self.phylum = "Chordata"
+        self.a_class = "Mammalia"
+        self.order = "Carnivora"
+        self.family = "Canidae"
+        self.genus = "Canis"
+        self.url = "http://cdn1.spiegel.de/images/image-260730-galleryV9-cpos.jpg"
+        self.life = "10 years"
+        self.habitat = "Dence woodlands and Plains"
+        self.geolocation = "Asia, Europa and North America"
 
 
 app = webapp2.WSGIApplication([
