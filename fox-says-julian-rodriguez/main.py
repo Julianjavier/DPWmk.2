@@ -51,6 +51,10 @@ class PageBuilder(object):
         </html>
         '''
 
+        def print_out(self):
+            output = self.open + self.nav + self.content + self.close
+            return output.format(**locals())
+
 class Animal(object):
      def __init__(self):
 
@@ -85,6 +89,44 @@ class Wolf(Animal):
         self.life = "10 years"
         self.habitat = "Dence woodlands and Plains"
         self.geolocation = "Asia, Europa and North America"
+
+
+class Whale(Animal):
+    def __init__(self):
+
+        Animal.__init__(self)
+
+        self._sound = "wwwwhhhhaaaalllleeeessss"
+
+        self.name = "Blue Whale"
+        self.phylum = "Chordata"
+        self.a_class = "Mammalia"
+        self.order = "Cetacea"
+        self.family = "Balaenopteridae"
+        self.genus = "Balaenoptera"
+        self.url = "http://www.amosphotography.com/data/photos/310_1diver_and_bluewhale.jpg"
+        self.life = "20 years"
+        self.habitat = "The Ocean"
+        self.geolocation = "We went over this."
+
+
+class Lion(Animal):
+    def __init__(self):
+
+        Animal.__init__(self)
+
+        self._sound = "MEOW"
+
+        self.name = "African Savanna Lion"
+        self.phylum = "Chordata"
+        self.a_class = "Mammalia"
+        self.order = "Carnivora"
+        self.family = "Felidae"
+        self.genus = "Panthera"
+        self.url = "http://www.universeofsymbolism.com/images/lion-2.jpg"
+        self.life = "15 years"
+        self.habitat = "South Africa plains"
+        self.geolocation = "Africa"
 
 
 app = webapp2.WSGIApplication([
