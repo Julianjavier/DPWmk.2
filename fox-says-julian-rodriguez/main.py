@@ -57,6 +57,16 @@ class PageBuilder(object):
 
         '''
 
+        self.nav= '''
+       <nav>
+            <ul>
+                <li><a href="?an=o1">WALE</a></li>
+                <li><a href="?an=o2">WOLF</a></li>
+                <li><a href="?an=o3">LION</a></li>
+            </ul>
+       </nav>
+        '''
+
         self.content = '''
 
             <hr>
@@ -77,16 +87,6 @@ class PageBuilder(object):
             </div>
 
         </div>
-        '''
-
-        self.nav= '''
-       <nav>
-            <ul>
-                <li><a href="?an=">WALE</a></li>
-                <li><a href="?an=">WOLF</a></li>
-                <li><a href="?an=">LION</a></li>
-            </ul>
-       </nav>
         '''
 
         self.close = '''
