@@ -42,6 +42,9 @@ class MainHandler(webapp2.RequestHandler):
 class PageBuilder(object):
     def __init__(self):
 
+        self.animal = Animal()
+
+
         self.open = '''
         <!DOCTYPE html>
         <html>
