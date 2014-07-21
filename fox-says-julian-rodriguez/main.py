@@ -27,7 +27,6 @@ class MainHandler(webapp2.RequestHandler):
 
         if self.request.GET:
             animal = self.request.GET['an']
-            animal == "o3"
 
             if animal == "o1":
                 p.animal = whale
@@ -35,9 +34,8 @@ class MainHandler(webapp2.RequestHandler):
                 p.animal = wolf
             elif animal == "o3":
                 p.animal = lion
-            else:
-                animal == "o3"
-                p.animal = lion
+        else:
+            p.animal = lion
 
         self.response.write(p.print_out())
 
