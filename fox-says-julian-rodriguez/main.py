@@ -20,6 +20,31 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         self.response.write('Hello world!')
 
+class PageBuilder(object):
+    def __init__(self):
+
+        self.open = '''
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>{self.title}</title>
+            <link href="css/style.css" rel="stylesheet" type="text/css">
+        </head>
+        <body>
+        <div class="wrap">
+
+        '''
+
+        self.nav= '''
+       <nav>
+            <ul>
+                <li><a href="?an=">WALE</a></li>
+                <li><a href="?an=">WOLF</a></li>
+                <li><a href="?an=">LION</a></li>
+            </ul>
+       </nav>
+        '''
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
