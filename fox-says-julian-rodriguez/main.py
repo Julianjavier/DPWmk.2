@@ -45,6 +45,12 @@ class PageBuilder(object):
        </nav>
         '''
 
+        self.close = '''
+        </div>
+        </body>
+        </html>
+        '''
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
