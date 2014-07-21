@@ -71,6 +71,10 @@ class Animal(object):
         self.habitat = ""
         self.geolocation = ""
 
+     @property
+     def sound(self):
+        return self._sound
+
 
 class Wolf(Animal):
     def __init__(self):
