@@ -1,0 +1,50 @@
+
+body{
+    background:url("../img/skulls.png");
+}
+
+.wrap{
+    width:80%;
+    outline: 6px solid #41D339;
+    margin:40px auto 0px auto;
+    color:#41D339;
+    font-family:helvetica;
+    padding:20px;
+    overflow:hidden;
+    background-color:#FFF;
+}
+
+
+.wrap div{
+    width:400px;
+    float:left;
+}
+
+
+hr{
+    background-color:#41D339;
+    height:2px;
+    border:none;
+}
+
+h1{
+margin-top:20px;
+}
+
+.wrap nav {
+    width:250px;
+    margin:0px auto;
+    overflow:hidden;
+}
+
+.wrap nav ul{
+    padding:0;
+    overflow:hidden;
+}
+
+.wrap nav ul li{
+    display:block;
+    float:left;
+    padding:20px;
+    background-color:#41D339;
+}

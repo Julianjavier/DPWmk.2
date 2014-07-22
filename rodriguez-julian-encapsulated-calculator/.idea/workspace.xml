@@ -35,7 +35,7 @@
       <file leaf-file-name="app.yaml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="126" selection-end="186" vertical-scroll-proportion="0.17167382" vertical-offset="0" max-vertical-offset="699">
+            <state line="17" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.36480686" vertical-offset="0" max-vertical-offset="699">
               <folding />
             </state>
           </provider>
@@ -49,8 +49,8 @@
     </FindUsagesManager>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-31" />
-    <option name="y" value="22" />
+    <option name="x" value="78" />
+    <option name="y" value="24" />
     <option name="width" value="952" />
     <option name="height" value="844" />
   </component>
@@ -119,7 +119,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-31" y="22" width="952" height="844" extended-state="1" />
+    <frame x="78" y="24" width="952" height="844" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -167,7 +167,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="126" selection-end="186" vertical-scroll-proportion="0.17167382" vertical-offset="0" max-vertical-offset="699">
+        <state line="17" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.36480686" vertical-offset="0" max-vertical-offset="699">
           <folding />
         </state>
       </provider>
