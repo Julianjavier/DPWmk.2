@@ -18,13 +18,17 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+
+        ### Initialize page builder and title create
         p = PageBuilder()
         p.title = "Welcome!"
 
+        ### Initialize Animal sub classes
         whale = Whale()
         wolf = Wolf()
         lion = Lion()
 
+        ### IF statment to get url information to display information
         if self.request.GET:
             animal = self.request.GET['an']
 
@@ -39,6 +43,8 @@ class MainHandler(webapp2.RequestHandler):
 
         self.response.write(p.print_out())
 
+
+###HTML Template
 class PageBuilder(object):
     def __init__(self):
 
@@ -99,6 +105,8 @@ class PageBuilder(object):
         output = self.open + self.nav + self.content + self.close
         return output.format(**locals())
 
+
+###Animal Super Class
 class Animal(object):
      def __init__(self):
 
@@ -119,7 +127,7 @@ class Animal(object):
      def sound(self):
         return self._sound
 
-
+### Animal Subclasses
 class Wolf(Animal):
     def __init__(self):
 
@@ -152,7 +160,7 @@ class Whale(Animal):
         self.order = "Cetacea"
         self.family = "Balaenopteridae"
         self.genus = "Balaenoptera"
-        self.url = "http://www.amosphotography.com/data/photos/310_1diver_and_bluewhale.jpg"
+        self.url = "http://designeranimals2011.wikispaces.com/file/view/blue-whale-pictures_3.jpg/238922483/480x360/blue-whale-pictures_3.jpg"
         self.life = "20 years"
         self.habitat = "The Ocean"
         self.geolocation = "We went over this."
@@ -176,6 +184,7 @@ class Lion(Animal):
         self.habitat = "South Africa plains"
         self.geolocation = "Africa"
 
+###end animal sub classes
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
