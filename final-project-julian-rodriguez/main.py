@@ -26,32 +26,30 @@ class MainHandler(webapp2.RequestHandler):
         view.form_header = "Food App"
 
         #gets the modle and view to de presented on the page(model gathers data.)
-        if not self.request.GET:
-            f_modle =  FoodModle()
-            searchResults = f_modle.search()
+        if self.request.GET:
 
-            f_view = FoodView()
-            f_view.dos = searchResults
-            f_view.update()
-            view.page_content = f_view.content
-        else:
-            f_modle =  FoodModle()
-            f_modle.code = self.request.GET['code']
-            f_modle.send_req()
+            if self.request.GET.has_key('search'):
 
-            f_view = FoodView()
-            f_view.dos = f_modle.dos
-            f_view.update()
-            view.page_content = f_view.content
-        # elif:
-        #     f_modle =  FoodModle()
-        #     id = self.request.GET['id']
-        #     f_modle.read_by_id(id)
-        #
-        #     f_view = FoodDetailsView()
-        #     f_view.dos = f_modle.dos
-        #     f_view.update()
-        #     view.page_content = f_view.content
+                search = self.request.GET['search']
+
+                f_modle =  FoodModle()
+                searchResults = f_modle.search(search)
+
+                f_view = FoodView()
+                f_view.dos = searchResults
+                f_view.update()
+                view.page_content = f_view.content
+
+            elif self.request.GET.has_key('page'):
+
+                f_modle =  FoodModle()
+                id = self.request.GET['id']
+                f_modle.read_by_id(id)
+
+                f_view = FoodDetailsView()
+                f_view.dos = f_modle.dos
+                f_view.update()
+                view.page_content = f_view.content
 
 
         self.response.write(view.print_out())
@@ -79,7 +77,7 @@ class FoodView(object):
                     <hr class="clear">
                     <h3>Total Time: '''+str(recipe.time) +'''</h3>
                     <hr class="clear2">
-                    <a class="link" href="''' +recipe.link_a+ '''">GET STARTED</a>
+                    <a class="link" href="/?page=''' +recipe.id+ '''">GET STARTED</a>
                 </div>
             </div>
             '''
@@ -107,7 +105,7 @@ class FoodDetailsView(object):
                     <hr class="clear">
                     <h3>Total Time: '''+str(recipe.time) +'''</h3>
                     <hr class="clear2">
-                    <a class="link" href="''' +recipe.link_a+ '''">GET STARTED</a>
+                    <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>
                 </div>
             </div>
             '''
@@ -120,50 +118,49 @@ class FoodModle(object):
 
     def __init__(self):
 
-
-        def search(self, query = ''):  #request for data ^^^^^ in the url (api)
-
-            self.full_url = 'http://api.yummly.com/v1/api/recipes?_app_id=835c05a2&_app_key=5d0e15329a55763e866fdcbfffc512f6&q=' + query
-
-            req = urllib2.Request(self.full_url)
-
-            opener = urllib2.build_opener()
-
-            data = opener.open(req)
-
-            #parse it
-            jsondoc= json.load(data)
-
-            self.__fdo = FoodDataObject()
-
-            self.__dos = []
+        self.__dos = []
 
 
-            #loop to read thru the objects
-            for recipe in jsondoc['matches']:
-                fdo = FoodDataObject()
+    def search(self, query = ''):  #request for data ^^^^^ in the url (api)
 
-                #First Data Call from the api
-                fdo.recipe_name = recipe['recipeName'].replace("{" , '"')
-                fdo.recipe_name = fdo.recipe_name.replace("}" , '"')
-                fdo.rating = recipe['rating']
+        self.full_url = 'http://api.yummly.com/v1/api/recipes?_app_id=835c05a2&_app_key=5d0e15329a55763e866fdcbfffc512f6&q=' + query
 
-                fdo.id = recipe ['id']
+        req = urllib2.Request(self.full_url)
+
+        opener = urllib2.build_opener()
+
+        data = opener.open(req)
+
+        #parse it
+        jsondoc= json.load(data)
+
+        self.__fdo = FoodDataObject()
+
+        #loop to read thru the objects
+        for recipe in jsondoc['matches']:
+            fdo = FoodDataObject()
+
+            #First Data Call from the api
+            fdo.recipe_name = recipe['recipeName'].replace("{" , '"')
+            fdo.recipe_name = fdo.recipe_name.replace("}" , '"')
+            fdo.rating = recipe['rating']
+
+            fdo.id = recipe ['id']
 
 
-                #This calls the second part of the api
-                self.__fdo.url = "http://api.yummly.com/v1/api/recipe/" + str(fdo.id) + "?_app_id=835c05a2&_app_key=5d0e15329a55763e866fdcbfffc512f6"
-                req2 = urllib2.Request(self.__fdo.url)
-                opener2 = urllib2.build_opener()
-                data2 = opener2.open(req2)
-                jsondoc2 = json.load(data2)
+            #This calls the second part of the api
+            self.__fdo.url = "http://api.yummly.com/v1/api/recipe/" + str(fdo.id) + "?_app_id=835c05a2&_app_key=5d0e15329a55763e866fdcbfffc512f6"
+            req2 = urllib2.Request(self.__fdo.url)
+            opener2 = urllib2.build_opener()
+            data2 = opener2.open(req2)
+            jsondoc2 = json.load(data2)
 
-                #data from the second data calll
-                fdo.image_big = jsondoc2['images'][0]['imageUrlsBySize']["360"]
-                fdo.link_a = jsondoc2["source"]["sourceRecipeUrl"]
-                fdo.time = jsondoc2["totalTime"]
+            #data from the second data calll
+            fdo.image_big = jsondoc2['images'][0]['imageUrlsBySize']["360"]
+            fdo.link_a = jsondoc2["source"]["sourceRecipeUrl"]
+            fdo.time = jsondoc2["totalTime"]
 
-                self.__dos.append(fdo)
+            self.__dos.append(fdo)
 
         return self.__dos;
 

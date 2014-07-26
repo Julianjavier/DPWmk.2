@@ -46,7 +46,7 @@ class FormPage(Page):
         Page. __init__(self)
         self.__form_open= '<form method="GET" action="">'
         self.__inputs= '''
-                <input class="text" type="text"  name="code" placeholder="Key Word" required/>
+                <input class="text" type="text"  name="search" placeholder="Key Word" required/>
                 <button class="submit" type="submit"/>SUBMIT</button>
         '''
         self.__form_close= '</form>'
