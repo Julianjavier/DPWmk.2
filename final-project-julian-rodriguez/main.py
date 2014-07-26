@@ -40,15 +40,16 @@ class MainHandler(webapp2.RequestHandler):
                 f_view.update()
                 view.page_content = f_view.content
 
-            elif self.request.GET.has_key('page'):
+            elif self.request.GET.has_key('id'):
+
+                id = self.request.GET['id']
 
                 f_modle =  FoodModle()
-                id = self.request.GET['id']
-                f_modle.read_by_id(id)
+                food = f_modle.read_by_id(id)
 
                 f_view = FoodDetailsView()
-                f_view.dos = f_modle.dos
-                f_view.update()
+                f_view.dos = food
+                f_view.update(food)
                 view.page_content = f_view.content
 
 
@@ -77,7 +78,7 @@ class FoodView(object):
                     <hr class="clear">
                     <h3>Total Time: '''+str(recipe.time) +'''</h3>
                     <hr class="clear2">
-                    <a class="link" href="/?page=''' +recipe.id+ '''">GET STARTED</a>
+                    <a class="link" href="/?id=''' +recipe.id+ '''">GET STARTED</a>
                 </div>
             </div>
             '''
@@ -88,27 +89,26 @@ class FoodDetailsView(object):
         self.dos = []
         self.content = ''
 
-    def update(self):
-        for recipe in self.dos:
-            #content that will be printed on the view. This is take from the page class.
-            self.content += '''
-            <div class="matches">
+    def update(self, recipe):
+        #content that will be printed on the view. This is take from the page class.
+        self.content += '''
+        <div class="matches">
 
-                <img src=" '''+recipe.image_big +''' ">
+            <img src=" '''+recipe.image_big +''' ">
 
-                <div class="title">
-                    <h3>''' + recipe.recipe_name + ''' </h3>
-                </div>
-
-                <div class="data">
-                    <h3>'''+str(recipe.rating)+''' out of 5</h3>
-                    <hr class="clear">
-                    <h3>Total Time: '''+str(recipe.time) +'''</h3>
-                    <hr class="clear2">
-                    <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>
-                </div>
+            <div class="title">
+                <h3>''' + recipe.recipe_name + ''' </h3>
             </div>
-            '''
+
+            <div class="data">
+                <h3>'''+str(recipe.rating)+''' out of 5</h3>
+                <hr class="clear">
+                <h3>Total Time: '''+str(recipe.time) +'''</h3>
+                <hr class="clear2">
+                <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>
+            </div>
+        </div>
+        '''
 
 
 
@@ -162,9 +162,27 @@ class FoodModle(object):
 
             self.__dos.append(fdo)
 
-        return self.__dos;
+        return self.__dos
+
+
 
     def read_by_id(self, id):
+
+        #This calls the second part of the api
+        url = "http://api.yummly.com/v1/api/recipe/" + str(id) + "?_app_id=835c05a2&_app_key=5d0e15329a55763e866fdcbfffc512f6"
+        req2 = urllib2.Request(url)
+        opener2 = urllib2.build_opener()
+        data2 = opener2.open(req2)
+        jsondoc2 = json.load(data2)
+
+        #data from the second data calll
+        fdo = FoodDataObject()
+        fdo.image_big = jsondoc2['images'][0]['imageUrlsBySize']["360"]
+        fdo.link_a = jsondoc2["source"]["sourceRecipeUrl"]
+        fdo.time = jsondoc2["totalTime"]
+
+
+        return fdo
 
         # request a url passing it the id
 
@@ -173,8 +191,6 @@ class FoodModle(object):
         # put the parsed data into a FoodDataObject
 
         # return the FoodDataObject
-
-        pass
 
 class FoodDataObject(object):
     def __init__(self):
