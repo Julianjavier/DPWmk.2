@@ -92,21 +92,25 @@ class FoodDetailsView(object):
     def update(self, recipe):
         #content that will be printed on the view. This is take from the page class.
         self.content += '''
-        <div class="matches">
+        <div class="view">
 
             <img src=" '''+recipe.image_big +''' ">
 
-            <div class="title">
+            <div class="title_view">
                 <h3>''' + recipe.recipe_name + ''' </h3>
             </div>
 
-            <div class="data">
+            <div class="data_view">
                 <h3>'''+str(recipe.rating)+''' out of 5</h3>
                 <hr class="clear">
                 <h3>Total Time: '''+str(recipe.time) +'''</h3>
                 <hr class="clear2">
-                <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>
-            </div>
+                <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>'''
+
+        for ingredient in recipe.in_detail:
+            self.content += '''<li>'''+ ingredient +'''</li>'''
+
+        self.content += '''</div>
         </div>
         '''
 
@@ -175,11 +179,15 @@ class FoodModle(object):
         data2 = opener2.open(req2)
         jsondoc2 = json.load(data2)
 
-        #data from the second data calll
+        #data from the second data call
         fdo = FoodDataObject()
         fdo.image_big = jsondoc2['images'][0]['imageUrlsBySize']["360"]
         fdo.link_a = jsondoc2["source"]["sourceRecipeUrl"]
         fdo.time = jsondoc2["totalTime"]
+        fdo.recipe_name = jsondoc2["name"]
+
+        for ingredient in jsondoc2['ingredientLines']:
+            fdo.in_detail.append(ingredient)
 
 
         return fdo
@@ -194,16 +202,20 @@ class FoodModle(object):
 
 class FoodDataObject(object):
     def __init__(self):
+
+        ##data from first call
         self.ingredients = ''
         self.rating = ''
         self.id = ''
         self.code = 0
-        self.recipe_name = ''
         self.image = ''
 
+        ##data from second call
         self.image_big = ''
         self.link_a = ''
         self.time =''
+        self.recipe_name = ''
+        self.in_detail = []
 
 
 app = webapp2.WSGIApplication([
