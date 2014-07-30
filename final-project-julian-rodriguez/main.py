@@ -52,6 +52,16 @@ class MainHandler(webapp2.RequestHandler):
                 f_view.update(food)
                 view.page_content = f_view.content
 
+        else:
+
+            f_modle =  FoodModle()
+            searchResults = f_modle.search('chocolate')
+
+            f_view = FoodView()
+            f_view.dos = searchResults
+            f_view.update()
+            view.page_content = f_view.content
+
 
         self.response.write(view.print_out())
 
@@ -81,7 +91,7 @@ class FoodView(object):
             self.content += '''<hr class="clear">
             <h3>Total Time: '''+str(recipe.time) +'''</h3>
             <hr class="clear2">
-            <a class="link" href="''' +recipe.link_a+ '''">GET STARTED</a>
+            <a class="link" href="?id=''' +recipe.id+ '''">GET STARTED</a>
         </div>
     </div>
     '''
