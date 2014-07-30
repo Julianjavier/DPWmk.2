@@ -7,7 +7,7 @@ class Page(object):
         <!DOCTYPE html>
         <html>
             <head>
-                <title>SEARCH.dot.EAT</title>
+                <title>SEARCH.EAT</title>
                 <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
                 <link href="css/style.css" rel="stylesheet" type="text/css">
             </head>
