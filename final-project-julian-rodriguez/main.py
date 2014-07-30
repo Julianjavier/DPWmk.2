@@ -73,15 +73,18 @@ class FoodView(object):
                     <h3>''' + recipe.recipe_name + ''' </h3>
                 </div>
 
-                <div class="data">
-                    <h3>'''+str(recipe.rating)+''' out of 5</h3>
-                    <hr class="clear">
-                    <h3>Total Time: '''+str(recipe.time) +'''</h3>
-                    <hr class="clear2">
-                    <a class="link" href="/?id=''' +recipe.id+ '''">GET STARTED</a>
-                </div>
-            </div>
-            '''
+                <div class="data">'''
+
+            for i in range (1, recipe.rating):
+                self.content += '''<img src="img/star.png" >'''
+
+            self.content += '''<hr class="clear">
+            <h3>Total Time: '''+str(recipe.time) +'''</h3>
+            <hr class="clear2">
+            <a class="link" href="''' +recipe.link_a+ '''">GET STARTED</a>
+        </div>
+    </div>
+    '''
 
 class FoodDetailsView(object):
     def __init__(self):
