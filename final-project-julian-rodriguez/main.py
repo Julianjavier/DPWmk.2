@@ -67,7 +67,7 @@ class FoodView(object):
             self.content += '''
             <div class="matches">
 
-                <img src=" '''+recipe.image_big +''' ">
+                <img src="'''+recipe.image_big +'''">
 
                 <div class="title">
                     <h3>''' + recipe.recipe_name + ''' </h3>
@@ -97,7 +97,7 @@ class FoodDetailsView(object):
         self.content += '''
         <div class="view">
 
-            <img src=" '''+recipe.image_big +''' ">
+            <img src="'''+recipe.image_big +'''">
 
             <div class="title_view">
                 <h3>''' + recipe.recipe_name + ''' </h3>
@@ -105,6 +105,7 @@ class FoodDetailsView(object):
 
             <div class="data_view">
                 <h3>'''+str(recipe.rating)+''' out of 5</h3>
+                <h4>Total Servings: '''+str(recipe.servingSize) +'''</h4>
                 <hr class="clear">
                 <h3>Total Time: '''+str(recipe.time) +'''</h3>
                 <hr class="clear2">
@@ -130,7 +131,7 @@ class FoodModle(object):
 
     def search(self, query = ''):  #request for data ^^^^^ in the url (api)
 
-        self.full_url = 'http://api.yummly.com/v1/api/recipes?_app_id=835c05a2&_app_key=5d0e15329a55763e866fdcbfffc512f6&q=' + query
+        self.full_url = 'http://api.yummly.com/v1/api/recipes?_app_id=2f555d00&_app_key=3a78da9d272c848b3d6dd9665b9a35f7&q=' + query
 
         req = urllib2.Request(self.full_url)
 
@@ -156,7 +157,7 @@ class FoodModle(object):
 
 
             #This calls the second part of the api
-            self.__fdo.url = "http://api.yummly.com/v1/api/recipe/" + str(fdo.id) + "?_app_id=835c05a2&_app_key=5d0e15329a55763e866fdcbfffc512f6"
+            self.__fdo.url = "http://api.yummly.com/v1/api/recipe/" + str(fdo.id) + "?_app_id=2f555d00&_app_key=3a78da9d272c848b3d6dd9665b9a35f7"
             req2 = urllib2.Request(self.__fdo.url)
             opener2 = urllib2.build_opener()
             data2 = opener2.open(req2)
@@ -164,6 +165,11 @@ class FoodModle(object):
 
             #data from the second data calll
             fdo.image_big = jsondoc2['images'][0]['imageUrlsBySize']["360"]
+
+            ##If statment for null images
+            if fdo.image_big == "null=s360-c":
+                fdo.image_big = "img/default.png"
+
             fdo.link_a = jsondoc2["source"]["sourceRecipeUrl"]
             fdo.time = jsondoc2["totalTime"]
 
@@ -188,6 +194,7 @@ class FoodModle(object):
         fdo.link_a = jsondoc2["source"]["sourceRecipeUrl"]
         fdo.time = jsondoc2["totalTime"]
         fdo.recipe_name = jsondoc2["name"]
+        fdo.servingSize = jsondoc2["numberOfServings"]
 
         for ingredient in jsondoc2['ingredientLines']:
             fdo.in_detail.append(ingredient)
@@ -219,7 +226,7 @@ class FoodDataObject(object):
         self.time =''
         self.recipe_name = ''
         self.in_detail = []
-
+        self.servingSize = 0
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
