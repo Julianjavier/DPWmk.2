@@ -35,7 +35,33 @@ class MusicModel(object):
         data=opener.open(req)
         jsondoc=json.load(data)
 
-        track= jsondoc['songs']['track']
+        track= jsondoc['songs']['track'][0]
+
+        mdo.artist=track['artist']
+        mdo.cover=track['cover']
+        mdo.label=track['label']
+        mdo.title=track['title']
+        mdo.length=track['length']
+        mdo.year=track['year']
+        mdo.file=track['file']
+
+class MusicView(object):
+    def __init__(self):
+
+        self.open = '''
+        <!DOCTYPE>
+        <html>
+            <body>
+        '''
+
+        self.content = ''
+
+        self.close = '''
+            </body>
+        </html>
+        '''
+
+        self.fullPage = self.open + self.content + self.close
 
 class MusicObject(object):
     def __init__(self):
