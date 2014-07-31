@@ -133,3 +133,9 @@ footer{
     height:20px;
     width:100%;
 }
+
+/* This will be the styles for the details view */
+
+.view img{
+    float:left;
+}

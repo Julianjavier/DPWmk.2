@@ -116,15 +116,19 @@ class FoodDetailsView(object):
             <div class="data_view">
                 <h3>'''+str(recipe.rating)+''' out of 5</h3>
                 <h4>Total Servings: '''+str(recipe.servingSize) +'''</h4>
-                <hr class="clear">
+                <hr>
                 <h3>Total Time: '''+str(recipe.time) +'''</h3>
-                <hr class="clear2">
+                <hr>
                 <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>'''
 
         for ingredient in recipe.in_detail:
             self.content += '''<li>'''+ ingredient +'''</li>'''
 
-        self.content += '''</div>
+        self.content += '''
+            <h3>Total Time: '''+str(recipe.time) +'''</h3>
+                <hr>
+                <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>
+            </div>
         </div>
         '''
 
@@ -139,9 +143,11 @@ class FoodModle(object):
         self.__dos = []
 
 
-    def search(self, query = ''):  #request for data ^^^^^ in the url (api)
+    def search(self, query = ''):
 
         self.full_url = 'http://api.yummly.com/v1/api/recipes?_app_id=2f555d00&_app_key=3a78da9d272c848b3d6dd9665b9a35f7&q=' + query
+
+        #request for data ^^^^^ in the url (api)
 
         req = urllib2.Request(self.full_url)
 
