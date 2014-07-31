@@ -137,5 +137,11 @@ footer{
 /* This will be the styles for the details view */
 
 .view img{
+    margin:0 40px 0 0;
+}
+
+.view .data_view{
+    width:80%;
     float:left;
+    min-height:544px;
 }

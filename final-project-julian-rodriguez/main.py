@@ -107,28 +107,23 @@ class FoodDetailsView(object):
         self.content += '''
         <div class="view">
 
-            <img src="'''+recipe.image_big +'''">
-
-            <div class="title_view">
-                <h3>''' + recipe.recipe_name + ''' </h3>
-            </div>
-
             <div class="data_view">
-                <h3>'''+str(recipe.rating)+''' out of 5</h3>
+                <h2>''' + recipe.recipe_name + ''' </h2>
+
                 <h4>Total Servings: '''+str(recipe.servingSize) +'''</h4>
                 <hr>
-                <h3>Total Time: '''+str(recipe.time) +'''</h3>
-                <hr>
-                <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>'''
+                '''
 
         for ingredient in recipe.in_detail:
             self.content += '''<li>'''+ ingredient +'''</li>'''
 
         self.content += '''
-            <h3>Total Time: '''+str(recipe.time) +'''</h3>
+                <h3>Total Time: '''+str(recipe.time) +'''</h3>
                 <hr>
                 <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>
             </div>
+        <img src="'''+recipe.image_big +'''">
+
         </div>
         '''
 
