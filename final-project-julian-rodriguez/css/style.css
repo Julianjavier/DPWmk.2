@@ -136,12 +136,32 @@ footer{
 
 /* This will be the styles for the details view */
 
+.view{
+    margin:20px 0 0 0;
+}
+
+.line{
+    height:3px;
+}
+
 .view img{
-    margin:0 40px 0 0;
+    float:left;
+    margin:0px 40px 0 40px;
 }
 
 .view .data_view{
-    width:80%;
+    margin:0 auto;
+    width:50%;
     float:left;
     min-height:544px;
+}
+
+.view .data_view li{
+    margin:0 0 7px 0;
+}
+
+.view .link{
+    color:#5786C5;
+    margin-top:100px;
+    font-size:30px;
 }

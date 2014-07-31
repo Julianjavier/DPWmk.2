@@ -91,7 +91,7 @@ class FoodView(object):
             self.content += '''<hr class="clear">
             <h3>Total Time: '''+str(recipe.time) +'''</h3>
             <hr class="clear2">
-            <a class="link" href="?id=''' +recipe.id+ '''">GET STARTED</a>
+            <a class="link" href="?id=''' +recipe.id+ '''">WHAT YOU NEED</a>
         </div>
     </div>
     '''
@@ -105,13 +105,15 @@ class FoodDetailsView(object):
     def update(self, recipe):
         #content that will be printed on the view. This is take from the page class.
         self.content += '''
+        <hr>
         <div class="view">
 
+        <img src="'''+recipe.image_big +'''">
             <div class="data_view">
                 <h2>''' + recipe.recipe_name + ''' </h2>
 
                 <h4>Total Servings: '''+str(recipe.servingSize) +'''</h4>
-                <hr>
+                <hr class="line">
                 '''
 
         for ingredient in recipe.in_detail:
@@ -119,10 +121,9 @@ class FoodDetailsView(object):
 
         self.content += '''
                 <h3>Total Time: '''+str(recipe.time) +'''</h3>
-                <hr>
+                <hr class="line">
                 <a class="link" href= "''' +recipe.link_a+ '''">GET STARTED</a>
             </div>
-        <img src="'''+recipe.image_big +'''">
 
         </div>
         '''
