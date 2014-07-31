@@ -45,8 +45,12 @@ class MusicModel(object):
         mdo.year=track['year']
         mdo.file=track['file']
 
+
 class MusicView(object):
     def __init__(self):
+
+        mdo = MusicObject()
+
 
         self.open = '''
         <!DOCTYPE>
@@ -62,6 +66,19 @@ class MusicView(object):
         '''
 
         self.fullPage = self.open + self.content + self.close
+
+        # @property
+        # def content():
+        #     self.__content
+        #
+        # @content.setter
+        # def content():
+        #     content = self.__content
+        #     return content
+
+        self.content += '''
+                <h1>'''+mdo.label+'''</h1>
+        '''
 
 class MusicObject(object):
     def __init__(self):
