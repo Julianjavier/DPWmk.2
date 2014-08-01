@@ -20,14 +20,17 @@ import urllib2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
 
+        page_view = MusicView()
 
+        self.response.write(page_view.fullPage)
 
 class MusicModel(object):
     def __init__(self):
 
-        mdo = MusicObject()
+        self.mdo = MusicObject()
+
+        self.dos = []
 
         self.full_url="http://rebeccacarroll.com/api/music/music.json"
         req=urllib2.Request(self.full_url)
@@ -35,30 +38,38 @@ class MusicModel(object):
         data=opener.open(req)
         jsondoc=json.load(data)
 
-        track= jsondoc['songs']['track'][0]
-
-        mdo.artist=track['artist']
-        mdo.cover=track['cover']
-        mdo.label=track['label']
-        mdo.title=track['title']
-        mdo.length=track['length']
-        mdo.year=track['year']
-        mdo.file=track['file']
-
+        for i in range (0, 8):
+            track= jsondoc['songs']['track'][i]
+            self.mdo.artist=track['artist']
+            self.mdo.cover=track['cover']
+            self.mdo.label=track['label']
+            self.mdo.title=track['title']
+            self.mdo.length=track['length']
+            self.mdo.year=track['year']
+            self.dos.append(self.mdo)
 
 class MusicView(object):
     def __init__(self):
 
-        mdo = MusicObject()
+        model= MusicModel()
 
 
         self.open = '''
         <!DOCTYPE>
+        <head>Final Practical</head>
         <html>
             <body>
+        <nav>
+            <li><a href="?q=bob">Bob Dylan</a></li>
+            <li><a href="?q=stones">The Rolling Stones</a></li>
+            <li><a href="?q=john">John Lennon</a></li>
+        </nav>
+
         '''
 
-        self.content = ''
+        self.content = '''
+
+        '''
 
         self.close = '''
             </body>
@@ -77,7 +88,15 @@ class MusicView(object):
         #     return content
 
         self.content += '''
-                <h1>'''+mdo.label+'''</h1>
+                <h1>'''+model.mdo.title+'''</h1>
+        '''
+
+        self.content += '''
+                <h1>'''+model.mdo.year+'''</h1>
+        '''
+
+        self.content += '''
+                <h1>'''+model.mdo.length+'''</h1>
         '''
 
 class MusicObject(object):
