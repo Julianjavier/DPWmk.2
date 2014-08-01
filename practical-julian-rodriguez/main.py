@@ -57,7 +57,6 @@ class MusicView(object):
 
         self.open = '''
         <!DOCTYPE>
-        <head>Final Practical</head>
         <html>
             <body>
         <nav>
