@@ -21,14 +21,14 @@ import urllib2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
 
+        model= MusicModel()
         page_view = MusicView()
 
+        self.response.write(model.dos)
         self.response.write(page_view.fullPage)
 
 class MusicModel(object):
     def __init__(self):
-
-        self.mdo = MusicObject()
 
         self.dos = []
 
@@ -38,7 +38,8 @@ class MusicModel(object):
         data=opener.open(req)
         jsondoc=json.load(data)
 
-        for i in range (0, 8):
+        for i in range (0, 9):
+            self.mdo = MusicObject()
             track= jsondoc['songs']['track'][i]
             self.mdo.artist=track['artist']
             self.mdo.cover=track['cover']
@@ -68,12 +69,19 @@ class MusicView(object):
         '''
 
         self.content = '''
-
         '''
 
         self.close = '''
             </body>
         </html>
+        '''
+
+        self.content += '''
+            <h1>'''+model.mdo.title+'''</h1>
+            <h1>'''+model.mdo.year+'''</h1>
+            <h1>'''+model.mdo.length+'''</h1>
+            <h1>'''+model.mdo.label+'''</h1>
+            <img src="'''+model.mdo.cover+'''"/>
         '''
 
         self.fullPage = self.open + self.content + self.close
@@ -87,17 +95,7 @@ class MusicView(object):
         #     content = self.__content
         #     return content
 
-        self.content += '''
-                <h1>'''+model.mdo.title+'''</h1>
-        '''
 
-        self.content += '''
-                <h1>'''+model.mdo.year+'''</h1>
-        '''
-
-        self.content += '''
-                <h1>'''+model.mdo.length+'''</h1>
-        '''
 
 class MusicObject(object):
     def __init__(self):
