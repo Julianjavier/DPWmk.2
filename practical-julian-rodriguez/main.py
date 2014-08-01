@@ -22,7 +22,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
 
         model= MusicModel()
-        page_view = MusicView()
+        page_view = MusicView(model)
 
         self.response.write(model.dos)
         self.response.write(page_view.fullPage)
@@ -39,20 +39,18 @@ class MusicModel(object):
         jsondoc=json.load(data)
 
         for i in range (0, 9):
-            self.mdo = MusicObject()
+            mdo = MusicObject()
             track= jsondoc['songs']['track'][i]
-            self.mdo.artist=track['artist']
-            self.mdo.cover=track['cover']
-            self.mdo.label=track['label']
-            self.mdo.title=track['title']
-            self.mdo.length=track['length']
-            self.mdo.year=track['year']
-            self.dos.append(self.mdo)
+            mdo.artist=track['artist']
+            mdo.cover=track['cover']
+            mdo.label=track['label']
+            mdo.title=track['title']
+            mdo.length=track['length']
+            mdo.year=track['year']
+            self.dos.append(mdo)
 
 class MusicView(object):
-    def __init__(self):
-
-        model= MusicModel()
+    def __init__(self, model):
 
 
         self.open = '''
@@ -75,13 +73,15 @@ class MusicView(object):
         </html>
         '''
 
-        self.content += '''
-            <h1>'''+model.mdo.title+'''</h1>
-            <h1>'''+model.mdo.year+'''</h1>
-            <h1>'''+model.mdo.length+'''</h1>
-            <h1>'''+model.mdo.label+'''</h1>
-            <img src="'''+model.mdo.cover+'''"/>
-        '''
+        for music in model.dos:
+
+            self.content += '''
+                <h1>'''+music.title+'''</h1>
+                <h1>'''+music.year+'''</h1>
+                <h1>'''+music.length+'''</h1>
+                <h1>'''+music.label+'''</h1>
+                <img src="'''+music.cover+'''"/>
+            '''
 
         self.fullPage = self.open + self.content + self.close
 

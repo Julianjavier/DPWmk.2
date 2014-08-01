@@ -17,6 +17,7 @@ header{
     padding:10px;
 }
 
+
 header img{
     width:300px;
     margin:0 0 0 10px;
@@ -156,6 +157,10 @@ footer{
     min-height:544px;
 }
 
+.view .data_view h2{
+    color:#222F66;
+}
+
 .view .data_view li{
     margin:0 0 7px 0;
 }
@@ -164,4 +169,24 @@ footer{
     color:#5786C5;
     margin-top:100px;
     font-size:30px;
+}
+
+
+/* Media Queries*/
+
+@media (max-width: 920px){
+
+    .view img{
+        float:none;
+        margin:0 auto;
+        display:block;
+    }
+
+    .view .data_view{
+        margin:0 auto;
+        width:100%;
+        float:left;
+        min-height:544px;
+}
+
 }
